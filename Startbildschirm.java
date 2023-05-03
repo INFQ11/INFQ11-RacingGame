@@ -10,7 +10,7 @@ public class Startbildschirm extends Bildschirm
         int breite = myGame.BREITE;
         int höhe = myGame.HOEHE;
         
-        Bild bild = new Bild(0,0,breite, höhe,"");
+        Bild bild = new Bild(0,0,breite, höhe,"D:\\Git Workspace\\Q11_Informatik_Template_Startmenü\\pictures\\Background.jpg");
         wurzel.add(bild);
     }
 }
