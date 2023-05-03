@@ -30,7 +30,6 @@ public class myGame extends Game
         return instance;
         else return instance = new myGame();
     }
-    // ...
     
     private myGame()
     {
