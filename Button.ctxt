@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Button
+comment1.params=x\ y\ groesse\ newDateipfadBild
+comment1.target=Button(float,\ float,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=void\ gedr\u00FCckt()
+comment3.params=
+comment3.target=int\ getCode()
+numComments=4

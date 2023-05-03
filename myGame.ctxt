@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=myGame
+comment1.params=tastencode
+comment1.target=void\ tasteReagieren(int)
+comment2.params=bildschirm
+comment2.target=void\ bildschirmWechseln(BildschirmType)
+comment3.params=
+comment3.target=myGame\ getInstance()
+comment4.params=
+comment4.target=myGame()
+comment5.params=
+comment5.target=ea.Maus\ getMaus()
+comment5.text=\r\n\ CODE\ 0\:\ STARTBUTTON\r\n\ CODE\ 1\:\ EINSTELLUNGEN\r\n\ CODE\ 2\:\ OK\r\n\ CODE\ 3\:\ PFEILVOR\r\n\ CODE\ 4\:\ PFEILZUR\u00DCCK\r\n\ CODE\ 5\:\ ZUR\u00DCCK\r\n\ CODE\ 6\:\ MEHRSPIELER\r\n\ CODE\ 7\:\ EINZELSPIELER\r\n
+comment6.params=
+comment6.target=Bildschirm\ getCurrentBildschirm()
+comment7.params=
+comment7.target=BildschirmType\ getCurrentBildschirmType()
+comment8.params=
+comment8.target=ea.Knoten\ getWurzel()
+numComments=9

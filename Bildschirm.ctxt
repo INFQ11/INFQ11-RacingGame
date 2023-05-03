@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Bildschirm
+comment1.params=bildschirm
+comment1.target=Bildschirm\ getBildschirm(BildschirmType)
+comment2.params=
+comment2.target=ea.Raum\ getRaum()
+comment3.params=
+comment3.target=Bildschirm()
+numComments=4

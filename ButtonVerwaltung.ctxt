@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ButtonVerwaltung
+comment1.params=game
+comment1.target=ButtonVerwaltung(myGame)
+comment2.params=game
+comment2.target=void\ createInstance(myGame)
+comment3.params=
+comment3.target=ButtonVerwaltung\ getInstance()
+comment4.params=button
+comment4.target=void\ buttonAnmelden(Button)
+comment5.params=code
+comment5.target=void\ mausReagieren(int)
+comment5.text=\r\n\ Reagiert\ auf\ das\ Klicken\ auf\ verschiedene\ Objekte,\ welche\ durch\ ihren\ eindeutigen\ Code\ bestimmt\ sind\r\n
+numComments=6
