@@ -61,7 +61,7 @@ public class myGame extends Game
         
         // Zuerst muss zu dem Startbildschirm gewechselt werden
         
-        //...
+        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
     }
     
     /**
