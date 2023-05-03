@@ -8,6 +8,10 @@ public class myGame extends Game
     
     private static myGame instance;
     
+    static final int BREITE = 1280;
+        
+    static final int HOEHE = 720;
+    
     public void tasteReagieren(int tastencode) {}
     
     public void bildschirmWechseln (BildschirmType bildschirm)
@@ -30,6 +34,8 @@ public class myGame extends Game
     
     private myGame()
     {
+        super(BREITE, HOEHE);
+        
         // Um überhaupt die Computermaus nutzen zu können, muss zuerst eine Maus erstellt + angemeldet werden
         
         /**
