@@ -14,6 +14,6 @@ public StartButton(float x, float y, int groesse, String newDateipfad)
  
  public void gedrückt()
  {
-     
+     myGame.getInstance().bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_SPIELER);
  }
 }
