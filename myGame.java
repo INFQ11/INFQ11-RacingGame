@@ -30,7 +30,6 @@ public class myGame extends Game
         return instance;
         else return instance = new myGame();
     }
-    // ...
     
     private myGame()
     {
@@ -62,7 +61,7 @@ public class myGame extends Game
         
         // Zuerst muss zu dem Startbildschirm gewechselt werden
         
-        //...
+        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
     }
     
     /**
