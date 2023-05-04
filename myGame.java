@@ -1,7 +1,7 @@
 import ea.*;
 
 /**
- * Spielsteuernde Klasse
+ * Spielsteuernde Klasse (abgeleitet von Game)
  */
 public class myGame extends Game
 {
