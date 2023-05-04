@@ -1,5 +1,8 @@
 import ea.*;
 
+/**
+ * Spielsteuernde Klasse
+ */
 public class myGame extends Game
 {
     private Maus maus;
