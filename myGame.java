@@ -9,6 +9,7 @@ public class myGame extends Game
     private Bildschirm currentBildschirm;
     private BildschirmType currentBildschirmType;
     private Gamemode currentGamemode;
+    private GamemodeType currentGamemodeType;
     
     private static myGame instance;
     
@@ -61,9 +62,6 @@ public class myGame extends Game
         
         bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
         
-        // Hier wird der Gamemode gewechselt
-        
-        
     }
     
     /**
@@ -88,7 +86,11 @@ public class myGame extends Game
     
     public Knoten getWurzel() {return wurzel;}
     
-    
+    public void gamemodeWechseln(GamemodeType gamemode)
+    {
+        currentGamemodeType = gamemode;
+        currentGamemode = Gamemode.getGamemode(gamemode);
+    }
     
     }      
 
