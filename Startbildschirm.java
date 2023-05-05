@@ -10,7 +10,13 @@ public class Startbildschirm extends Bildschirm
         Bild bild = new Bild(0,0,breite, höhe,"D:\\Git Workspace\\Q11_Informatik_Template_Startmenü\\pictures\\Background.jpg");
         wurzel.add(bild);
         
-        buttons[0].isActive = true;
-        wurzel.add(buttons[0]);
+        /**
+         * Information: Buttons müssen nun nicht mehr in ButtonSammlung erzeugt
+         * oder angemeldet werden!
+         */
+        
+        StartButton st = new StartButton(0,0,0,"");
+        st.isActive = true;
+        wurzel.add(st);
     }
 }

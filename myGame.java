@@ -51,12 +51,6 @@ public class myGame extends Game
         
         ButtonVerwaltung.createInstance(this);
         
-        /**
-         * Initialisierung der Buttons
-         */
-        
-        ButtonSammlung.initButtons();
-        
         // Ab hier können Bildschirme erzeugt + gewechselt werden
         
         // Zuerst muss zu dem Startbildschirm gewechselt werden
