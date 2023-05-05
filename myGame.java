@@ -8,6 +8,7 @@ public class myGame extends Game
     private Maus maus;
     private Bildschirm currentBildschirm;
     private BildschirmType currentBildschirmType;
+    private Gamemode currentGamemode;
     
     private static myGame instance;
     
@@ -59,6 +60,10 @@ public class myGame extends Game
         // Zuerst muss zu dem Startbildschirm gewechselt werden
         
         bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
+        
+        // Hier wird der Gamemode gewechselt
+        
+        
     }
     
     /**

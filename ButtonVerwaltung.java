@@ -21,9 +21,9 @@ public class ButtonVerwaltung implements MausReagierbar
         
         private ButtonVerwaltung(myGame game)
         {
-        this.game = game;
-        this.maus = game.getMaus();
-        buttons = new Button[8];
+            this.game = game;
+            this.maus = game.getMaus();
+            buttons = new Button[8];
         }
         
         public static void createInstance (myGame game)

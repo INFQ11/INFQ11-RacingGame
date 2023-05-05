@@ -10,7 +10,7 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
         int breite = myGame.BREITE;
         int höhe = myGame.HOEHE;
         
-        Bild bild = new Bild(0,0,breite, höhe,"D:\\Git Workspace\\Q11_Informatik_Template_Startmenü\\pictures\\Background.jpg");
+        Bild bild = new Bild(0,0,breite, höhe,"");
         wurzel.add(bild);
         
         /**
@@ -21,5 +21,13 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
         OKButton okb = new OKButton(0,0,0,"");
         okb.isActive = true;
         wurzel.add(okb);
+        
+        MehrspielerButton mb = new MehrspielerButton(350,0,0,"");
+        mb.isActive = true;
+        wurzel.add(mb);
+        
+        EinzelspielerButton eb = new EinzelspielerButton(700,0,0,"");
+        eb.isActive = true;
+        wurzel.add(eb);
     }
 }
