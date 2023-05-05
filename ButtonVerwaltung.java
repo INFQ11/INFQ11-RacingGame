@@ -13,9 +13,11 @@ public class ButtonVerwaltung implements MausReagierbar
     
     private Maus maus;
     
-    Button [] buttons;
+    private Button [] buttons;
     
     private static ButtonVerwaltung instance;
+    
+        public Button [] getButtons() {return buttons;}
         
         private ButtonVerwaltung(myGame game)
         {
