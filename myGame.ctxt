@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=myGame
-comment0.text=\r\n\ Spielsteuernde\ Klasse\ (abgeleitet\ von\ Game\ [Engine-Alpha])\ waddup\ constiisduuuum\r\n
+comment0.text=\r\n\ Spielsteuernde\ Klasse\ (abgeleitet\ von\ Game\ [Engine-Alpha])\ waddup\ constiisduuuuum\r\n
 comment1.params=tastencode
 comment1.target=void\ tasteReagieren(int)
 comment2.params=bildschirm
