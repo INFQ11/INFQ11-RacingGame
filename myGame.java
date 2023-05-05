@@ -1,7 +1,7 @@
 import ea.*;
 
 /**
- * Spielsteuernde Klasse (abgeleitet von Game [Engine-Alpha]) waddup
+ * Spielsteuernde Klasse (abgeleitet von Game [Engine-Alpha]) waddup constiisduuuum
  */
 public class myGame extends Game
 {
