@@ -7,7 +7,7 @@ public class Startbildschirm extends Bildschirm
         int breite = myGame.BREITE;
         int höhe = myGame.HOEHE;
         
-        Bild bild = new Bild(0,0,breite, höhe,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Hintergrung.jpeg");
+        Bild bild = new Bild(0,0,breite, höhe,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Hintergrund.jpeg");
         wurzel.add(bild);
         
         /**
