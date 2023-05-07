@@ -1,7 +1,7 @@
 import ea.*;
 
 /**
- * Spielsteuernde Klasse (abgeleitet von Game [Engine-Alpha]) waddup constiisduuuuum
+ * Spielsteuernde Klasse (abgeleitet von Game [Engine-Alpha]) waddup lol
  */
 public class myGame extends Game
 {
@@ -92,5 +92,5 @@ public class myGame extends Game
         currentGamemode = Gamemode.getGamemode(gamemode);
     }
     
-    }      
+}      
 

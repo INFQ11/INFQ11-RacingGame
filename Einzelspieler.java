@@ -7,12 +7,12 @@
 public class Einzelspieler extends Gamemode
 {
     
-    private char gm;
+    
     
     
     public Einzelspieler()
     {
-        gm = 'e';
+        // Ergänzung wenn wir die Gamedynamik programmieren
     }
 
     

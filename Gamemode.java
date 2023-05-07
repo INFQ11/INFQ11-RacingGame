@@ -12,7 +12,6 @@ public abstract class Gamemode
     
     public static Gamemode getGamemode(GamemodeType gamemode)
     {
-        
         switch(gamemode)
         {
             case EINZELSPIELER: return new Einzelspieler();
