@@ -18,15 +18,15 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
          * oder angemeldet werden!
          */
         
-        OKButton okb = new OKButton(0,0,0,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
+        OKButton okb = new OKButton(0,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
         okb.isActive = true;
         wurzel.add(okb);
         
-        MehrspielerButton mb = new MehrspielerButton(350,0,0,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
+        MehrspielerButton mb = new MehrspielerButton(350,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
         mb.isActive = true;
         wurzel.add(mb);
         
-        EinzelspielerButton eb = new EinzelspielerButton(700,0,0,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
+        EinzelspielerButton eb = new EinzelspielerButton(700,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
         eb.isActive = true;
         wurzel.add(eb);
     }

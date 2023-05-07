@@ -15,7 +15,7 @@ public class Startbildschirm extends Bildschirm
          * oder angemeldet werden!
          */
         
-        StartButton st = new StartButton(0,0,0,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
+        StartButton st = new StartButton(0,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
         st.isActive = true;
         wurzel.add(st);
     }
