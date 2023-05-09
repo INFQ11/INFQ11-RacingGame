@@ -10,6 +10,8 @@ public class myGame extends Game
     private BildschirmType currentBildschirmType;
     private Gamemode currentGamemode;
     private GamemodeType currentGamemodeType;
+    private int Index;
+    
     
     private static myGame instance;
     
@@ -62,6 +64,7 @@ public class myGame extends Game
         
         bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
         
+        Index = 0;
     }
     
     /**
@@ -92,5 +95,33 @@ public class myGame extends Game
         currentGamemode = Gamemode.getGamemode(gamemode);
     }
     
+    public void LehrerZurück()
+    {
+        if(Index==0)
+        {
+            Index = 10;
+        }
+        else
+        {
+            Index--;
+        }
+    }
+    
+    public void LehrerVor()
+    {
+        if(Index==10)
+        {
+            Index = 0;
+        }
+        else
+        {
+            Index++;
+        }
+    }
+    
+    public void LehrerAuswählen()
+    {
+        Index = Lehrer.getLehrer(Index);
+    }
 }      
 

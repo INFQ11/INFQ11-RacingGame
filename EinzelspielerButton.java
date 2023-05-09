@@ -15,5 +15,6 @@ public class EinzelspielerButton extends Button
  public void gedrückt()
  {
      myGame.getInstance().gamemodeWechseln(GamemodeType.EINZELSPIELER);
+     myGame.getInstance().bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_LEHRER);
  }
 }

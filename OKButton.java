@@ -14,6 +14,6 @@ public class OKButton extends Button
  
  public void gedrückt()
  {
-     myGame.getInstance().bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_LEHRER);
+     myGame.getInstance().bildschirmWechseln(BildschirmType.SPIELBILDSCHIRM);
  }
 }

@@ -15,5 +15,6 @@ public class MehrspielerButton extends Button
  public void gedrückt()
  {
      myGame.getInstance().gamemodeWechseln(GamemodeType.MEHRSPIELER);
+     myGame.getInstance().bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_LEHRER);
  }
 }
