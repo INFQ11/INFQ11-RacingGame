@@ -1,3 +1,4 @@
+import ea.*;
 
 /**
  * 
@@ -7,9 +8,11 @@
 public abstract class Lehrer
 {
     
-    public static Lehrer getLehrer(int Index)
+    
+    
+    public static Lehrer getLehrer(int i)
     {
-        switch(Index)
+        switch(i)
         {
             case 1: return new Adam();
             
@@ -34,4 +37,7 @@ public abstract class Lehrer
             default: return null;
         }
     }
+    
+    
+    
 }

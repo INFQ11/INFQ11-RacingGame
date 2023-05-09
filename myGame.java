@@ -105,6 +105,8 @@ public class myGame extends Game
         {
             Index--;
         }
+        int i = Index;
+        Lehrer.getLehrer(i);
     }
     
     public void LehrerVor()
@@ -117,11 +119,10 @@ public class myGame extends Game
         {
             Index++;
         }
+        int i = Index;
+        Lehrer.getLehrer(i);
     }
     
-    public void LehrerAuswählen()
-    {
-        Index = Lehrer.getLehrer(Index);
-    }
+    
 }      
 
