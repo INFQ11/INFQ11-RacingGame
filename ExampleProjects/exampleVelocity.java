@@ -36,6 +36,7 @@ direction = DIRECTION.BRAKE;
 manager.anmelden(this, 1);
 
 
+
 }
 
 public void tick()
@@ -47,6 +48,10 @@ public void tick()
         case LEFT -> car.bewegen(-speed, 0);
         case RIGHT -> car.bewegen(speed, 0);
         default -> car.bewegen(0,0);
+    }
+    
+    if (speed < 3f) {
+    speed += 0.0001f;
     }
 }
 
