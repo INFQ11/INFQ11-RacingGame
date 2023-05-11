@@ -1,23 +1,55 @@
 package ExampleProjects;
 
 import ea.*;
-public class exampleVelocity extends Game 
+public class exampleVelocity extends Game implements Ticker
 {
 
-private Rechteck r;
+private Rechteck car;
+
+private DIRECTION direction;
+
+private float speed;
 
 public exampleVelocity()
 {
+super(3000,2000);
 
-r = new Rechteck(0,0,50,50);
+speed = 1f;
 
-wurzel.add(r);
+car = new Rechteck(100,100,100,100);
 
-r.newtonschMachen();
+Rechteck wand = new Rechteck(1000,0, 100, 2000);
 
-r.masseSetzen(100);
+wand.passivMachen();
+
+wurzel.add(wand);
+
+wurzel.add(car);
+
+car.aktivMachen();
+
+car.schwerkraftAktivSetzen(false);
+
+
+direction = DIRECTION.BRAKE;
+
+manager.anmelden(this, 1);
+
 
 }
+
+public void tick()
+{
+    switch (direction)
+    {
+        case FORWARD -> car.bewegen(0,-speed);
+        case BACKWARDS -> car.bewegen(0, speed);
+        case LEFT -> car.bewegen(-speed, 0);
+        case RIGHT -> car.bewegen(speed, 0);
+        default -> car.bewegen(0,0);
+    }
+}
+
 
 @Override
 public void tasteReagieren (int code)
@@ -25,19 +57,24 @@ public void tasteReagieren (int code)
 
 switch (code)
 {
-case 22: r.geschwindigkeitSetzen(new Vektor (0,-1));
+case 22: direction = DIRECTION.FORWARD;
 break;
 
 case 0:
-r.geschwindigkeitSetzen(new Vektor(-1,0));
+direction = DIRECTION.LEFT;
 break;
 
 case 18:
-r.geschwindigkeitSetzen(new Vektor(0,1));
+direction = DIRECTION.BACKWARDS;
 break;
 
 case 3:
-r.geschwindigkeitSetzen(new Vektor(1,0));
+direction = DIRECTION.RIGHT;
+break;
+
+case 30:
+direction = DIRECTION.BRAKE;
+
 
 default:
 
