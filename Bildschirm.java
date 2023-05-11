@@ -29,30 +29,6 @@ public abstract class Bildschirm
     
     public Raum getRaum(){return wurzel;}
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     public Bildschirm()
     {
         for (Button b : ButtonVerwaltung.getInstance().getButtons())

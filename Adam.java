@@ -1,3 +1,4 @@
+import ea.*;
 
 /**
  * 
@@ -6,7 +7,8 @@
  */
 public class Adam extends Lehrer
 {
-    
+    private Bild Hintergrundbild;
+    private int Gewicht;
     public Adam()
     {
         

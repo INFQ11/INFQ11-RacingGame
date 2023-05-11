@@ -1,6 +1,5 @@
-
+import ea.*;
 /**
-
  * 
  * @author: Konstantin S. 
  * 

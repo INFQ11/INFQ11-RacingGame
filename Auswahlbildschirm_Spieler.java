@@ -10,7 +10,7 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
         int breite = myGame.BREITE;
         int höhe = myGame.HOEHE;
         
-        Bild bild = new Bild(0,0,breite, höhe,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Sternentstehung.jpg");
+        Bild bild = new Bild(0,0,breite, höhe,"C:\\Users\\ksilb\\OneDrive\\Dokumente\\Schule\\Info Projekt\\+libs\\Bilder\\Startbildschirm.jpg");
         wurzel.add(bild);
         
         /**
@@ -18,11 +18,11 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
          * oder angemeldet werden!
          */
         
-        MehrspielerButton mb = new MehrspielerButton(350,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
+        MehrspielerButton mb = new MehrspielerButton(350,0,100,"C:\\Users\\ksilb\\OneDrive\\Dokumente\\Schule\\Info Projekt\\+libs\\Bilder\\Buttons\\Einspielerbutton.png");
         mb.isActive = true;
         wurzel.add(mb);
         
-        EinzelspielerButton eb = new EinzelspielerButton(700,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
+        EinzelspielerButton eb = new EinzelspielerButton(700,0,100,"C:\\Users\\ksilb\\OneDrive\\Dokumente\\Schule\\Info Projekt\\+libs\\Bilder\\Buttons\\Mehrspielerbutton.png");
         eb.isActive = true;
         wurzel.add(eb);
     }
