@@ -2,4 +2,6 @@
 comment0.target=Startbildschirm
 comment1.params=
 comment1.target=Startbildschirm()
-numComments=2
+comment2.params=tastencode
+comment2.target=void\ tasteReagieren(int)
+numComments=3
