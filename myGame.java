@@ -1,25 +1,29 @@
 import ea.*;
 
 /**
- * Spielsteuernde Klasse (abgeleitet von Game [Engine-Alpha]) waddup lol
+ * Spielsteuernde Klasse (abgeleitet von Game [Engine-Alpha])
  */
-public class myGame extends Game
+public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
 {
-    private Maus maus;
-    private Bildschirm currentBildschirm;
-    private BildschirmType currentBildschirmType;
-    private Gamemode currentGamemode;
-    private GamemodeType currentGamemodeType;
-    private int Index;
-    
-    
     private static myGame instance;
     
-    static final int BREITE = 1280;
-        
-    static final int HOEHE = 720;
+    private Maus maus;
     
-    public void tasteReagieren(int tastencode) {}
+    private Bildschirm currentBildschirm;
+    private BildschirmType currentBildschirmType;
+    
+    private GamemodeType currentGamemodeType;
+    
+    private int Index;
+    
+    private static Auto autoSpieler1;
+    
+    private static Auto autoSpieler2;
+    
+    public void tasteReagieren(int tastencode) 
+    {
+        currentBildschirm.tasteReagieren(tastencode);
+    }
     
     public void bildschirmWechseln (BildschirmType bildschirm)
     {
@@ -29,20 +33,22 @@ public class myGame extends Game
         wurzel.add(currentBildschirm.getRaum());
     }
     
-    // Singleton-Entwurfsmuster fehlt!
+    public void gamemodeSetzen(GamemodeType gamemode)
+    {
+        currentGamemodeType = gamemode;
+    }
     
     public static myGame getInstance()
     {
         if (instance != null)
-        return instance;
-        else return instance = new myGame();
+            return instance;
+        else 
+            return instance = new myGame();
     }
     
     private myGame()
     {
-        super(BREITE, HOEHE);
-        
-        // Um überhaupt die Computermaus nutzen zu können, muss zuerst eine Maus erstellt + angemeldet werden
+        super(TexturManager.BREITE, TexturManager.HOEHE);
         
         /**
          * Erstellung einer Maus + Anmeldung von jener in dem Bildschirm
@@ -60,26 +66,15 @@ public class myGame extends Game
         
         // Ab hier können Bildschirme erzeugt + gewechselt werden
         
-        // Zuerst muss zu dem Startbildschirm gewechselt werden
         
-        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
+        
+        bildschirmWechseln(BildschirmType.MEHRSPIELER);
         
         Index = 0;
-    }
-    
-    /**
-         * CODE 0: STARTBUTTON
-         * CODE 1: EINSTELLUNGEN
-         * CODE 2: OK
-         * CODE 3: PFEILVOR
-         * CODE 4: PFEILZURÜCK
-         * CODE 5: ZURÜCK
-         * CODE 6: MEHRSPIELER
-         * CODE 7: EINZELSPIELER
-         */
         
-       
-    
+        manager.anmelden(this, 1);
+        tastenLosgelassenReagierbarAnmelden(this);
+    }
      
     public Maus getMaus() {return maus;}
     
@@ -89,41 +84,35 @@ public class myGame extends Game
     
     public Knoten getWurzel() {return wurzel;}
     
-    public void gamemodeWechseln(GamemodeType gamemode)
+    public GamemodeType getCurrentGamemodeType() {return currentGamemodeType;}
+    
+    public Manager getManager() {return manager;}
+    
+    public static void setAutoSpieler1(Auto auto) {autoSpieler1 = auto;}
+    
+    public static Auto getAutoSpieler1() {return autoSpieler1;}
+    
+    public static void setAutoSpieler2(Auto auto) {autoSpieler2 = auto;}
+    
+    public static Auto getAutoSpieler2() {return autoSpieler2;}
+        
+    @Override
+    public void tick()
     {
-        currentGamemodeType = gamemode;
-        currentGamemode = Gamemode.getGamemode(gamemode);
+        if (autoSpieler1 != null)
+            autoSpieler1.tick();
+            
+        if (autoSpieler2 != null)
+            autoSpieler2.tick();    
     }
     
-    /**
-     public void LehrerZurück()
+    public void tasteLosgelassen(int tastencode)
     {
-        if(Index==0)
-        {
-            Index = 10;
-        }
-        else
-        {
-            Index--;
-        }
-        int i = Index;
-        Lehrer.getLehrer(i);
+        if (autoSpieler1 != null)
+            autoSpieler1.tasteLosgelassen(tastencode);
+            
+        if (autoSpieler2 != null)
+            autoSpieler2.tasteLosgelassen(tastencode);    
     }
-    
-    public void LehrerVor()
-    {
-        if(Index==10)
-        {
-            Index = 0;
-        }
-        else
-        {
-            Index++;
-        }
-        int i = Index;
-        Lehrer.getLehrer(i);
-    }
-    */
-    
 }      
 

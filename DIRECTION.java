@@ -1,6 +1,6 @@
+// Constantin H.
 
 public enum DIRECTION
 {
-    LEFT, RIGHT, ACC, NEUTRAL, BRAKE
+    LEFT, RIGHT, NEUTRAL
 }
-

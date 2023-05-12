@@ -14,6 +14,10 @@ public class OKButton extends Button
  
  public void gedrückt()
  {
-     myGame.getInstance().bildschirmWechseln(BildschirmType.SPIELBILDSCHIRM);
+     if (myGame.getInstance().getCurrentGamemodeType() == GamemodeType.EINZELSPIELER)
+         
+         myGame.getInstance().bildschirmWechseln(BildschirmType.EINZELSPIELER);
+         
+     else myGame.getInstance().bildschirmWechseln(BildschirmType.MEHRSPIELER);
  }
 }

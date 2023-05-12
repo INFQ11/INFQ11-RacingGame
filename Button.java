@@ -1,6 +1,4 @@
-/**
- * DIESE KLASSE NICHT VERÄNDERN
- */
+// Max E.
 
 import ea.*;
 
@@ -18,14 +16,4 @@ public abstract class Button extends Bild
    
    public abstract int getCode();
    
-   /**
-         * CODE 0: STARTBUTTON
-         * CODE 1: EINSTELLUNGEN
-         * CODE 2: OK
-         * CODE 3: PFEILVOR
-         * CODE 4: PFEILZURÜCK
-         * CODE 5: ZURÜCK
-         * CODE 6: MEHRSPIELER
-         * CODE 7: EINZELSPIELER
-         */
 }

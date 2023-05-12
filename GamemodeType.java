@@ -1,7 +1,7 @@
-
 /**
- * @author: Konstantin S.
+ * @Author Konstantin S.
  */
+
 public enum GamemodeType
 {
     EINZELSPIELER, MEHRSPIELER

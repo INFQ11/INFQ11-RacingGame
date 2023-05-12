@@ -1,8 +1,4 @@
-/**
- * DIESE KLASSE NICHT VERÄNDERN
- * 
- * @Author: Max E.
- */
+// Max E.
 
 import ea.*;
 

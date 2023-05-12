@@ -1,6 +1,4 @@
-/**
- * DIESE KLASSE NICHT VERÄNDERN
- */
+// Max E.
 
 import ea.*;
 
@@ -19,15 +17,15 @@ public abstract class Bildschirm
             
             case AUSWAHLBILDSCHIRM_LEHRER: return new Auswahlbildschirm_Lehrer();
             
-            case SPIELBILDSCHIRM: return new Spielbildschirm();
+            case EINZELSPIELER: return new Einzelspieler();
             
-            default: return null;
+            case MEHRSPIELER: return new Mehrspieler();
+            
+            default: throw new UnsupportedOperationException("No BildschirmType selected");
         }
         
         
     }
-    
-    public Raum getRaum(){return wurzel;}
     
     public Bildschirm()
     {
@@ -36,4 +34,8 @@ public abstract class Bildschirm
             if (b!= null) b.isActive = false;
         }
     }
+    
+    public Raum getRaum(){return wurzel;}
+    
+    public abstract void tasteReagieren(int tastencode);
 }
