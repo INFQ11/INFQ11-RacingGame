@@ -14,6 +14,6 @@ public class PfeilVorButton extends Button
  
  public void gedrückt()
  {
-     myGame.getInstance().LehrerVor();
+     //myGame.getInstance().LehrerVor();
  }
 }

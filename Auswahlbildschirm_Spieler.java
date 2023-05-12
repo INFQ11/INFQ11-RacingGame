@@ -1,5 +1,5 @@
 /**
- * @Author Konsti S.
+ * @Author Konstantin S.
  */
 import ea.*;
 
@@ -12,11 +12,6 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
         
         Bild bild = new Bild(0,0,breite, höhe,"C:\\Users\\ksilb\\OneDrive\\Dokumente\\Schule\\Info Projekt\\+libs\\Bilder\\Startbildschirm.jpg");
         wurzel.add(bild);
-        
-        /**
-         * Information: Buttons müssen nun nicht mehr in ButtonSammlung erzeugt
-         * oder angemeldet werden!
-         */
         
         MehrspielerButton mb = new MehrspielerButton(350,0,100,"C:\\Users\\ksilb\\OneDrive\\Dokumente\\Schule\\Info Projekt\\+libs\\Bilder\\Buttons\\Einspielerbutton.png");
         mb.isActive = true;

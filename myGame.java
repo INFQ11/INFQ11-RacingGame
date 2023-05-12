@@ -95,7 +95,8 @@ public class myGame extends Game
         currentGamemode = Gamemode.getGamemode(gamemode);
     }
     
-    public void LehrerZurück()
+    /**
+     public void LehrerZurück()
     {
         if(Index==0)
         {
@@ -122,7 +123,7 @@ public class myGame extends Game
         int i = Index;
         Lehrer.getLehrer(i);
     }
-    
+    */
     
 }      
 
