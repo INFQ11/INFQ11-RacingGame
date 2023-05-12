@@ -14,8 +14,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     private GamemodeType currentGamemodeType;
     
-    private int Index;
-    
     private static Auto autoSpieler1;
     
     private static Auto autoSpieler2;
@@ -69,8 +67,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         
         
         bildschirmWechseln(BildschirmType.MEHRSPIELER);
-        
-        Index = 0;
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);
