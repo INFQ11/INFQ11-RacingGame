@@ -6,6 +6,8 @@ public abstract class Bildschirm
 {
     protected Knoten wurzel = new Knoten();
     
+    protected Button [] buttons = ButtonVerwaltung.getInstance().getButtons();
+    
      public static Bildschirm getBildschirm(BildschirmType bildschirm)
     {
         
@@ -21,10 +23,8 @@ public abstract class Bildschirm
             
             case MEHRSPIELER: return new Mehrspieler();
             
-            default: throw new UnsupportedOperationException("No BildschirmType selected");
+            default: throw new UnsupportedOperationException("No verified BildschirmType selected");
         }
-        
-        
     }
     
     public Bildschirm()

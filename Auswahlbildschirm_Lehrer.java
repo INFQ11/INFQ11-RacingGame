@@ -11,7 +11,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
         int breite = TexturManager.BREITE;
         int höhe = TexturManager.HOEHE;
         
-        Bild background = new Bild(0,0,breite, höhe,"C:\\Users\\ksilb\\OneDrive\\Dokumente\\Schule\\Info Projekt\\+libs\\Bilder\\Startbildschirm.jpg");
+        Bild background = new Bild(0,0,breite, höhe,TexturManager.DATEIPFAD + "Hintergrund.jpg");
         wurzel.add(background);
         
         /**
@@ -19,17 +19,17 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
          * oder angemeldet werden!
          */
         
-        PfeilVorButton PVB = new PfeilVorButton(0,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
-        PVB.isActive = true;
-        wurzel.add(PVB);
         
-        PfeilZurückButton PZB = new PfeilZurückButton(350,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
-        PZB.isActive = true;
-        wurzel.add(PZB);
+        buttons[3].isActive = true;
+        wurzel.add(buttons[3]);
         
-        OKButton okb = new OKButton(700,0,50,"C:\\Users\\ksilb\\OneDrive\\Bilder\\Saved_Pictures\\Button.png");
-        okb.isActive = true;
-        wurzel.add(okb);
+        
+        buttons[4].isActive = true;
+        wurzel.add(buttons[4]);
+        
+        
+        buttons[2].isActive = true;
+        wurzel.add(buttons[2]);
     }
     
     @Override

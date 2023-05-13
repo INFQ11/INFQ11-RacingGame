@@ -20,5 +20,5 @@ public class TexturManager
       
       public static final int BREITE = 1280;
       public static final int HOEHE = 720;
-      public static final String DATEIPFAD = "Resources/";
+      public static final String DATEIPFAD = "Resources/Pictures/";
 }

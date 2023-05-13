@@ -95,6 +95,8 @@ public class Auto extends Bild
     public void tasteReagieren(int code)
 
     {
+        
+    // Tastenlayout mit WASD + Leertaste
     
     if (!secondPlayer)
     switch (code)
@@ -115,6 +117,9 @@ public class Auto extends Bild
 
     }
     else 
+    
+    // Tastenlayout mit Pfeiltasten
+    
     switch (code)
     {
 

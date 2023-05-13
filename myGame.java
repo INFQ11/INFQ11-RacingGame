@@ -62,11 +62,13 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         
         ButtonVerwaltung.createInstance(this);
         
+        ButtonSammlung.instantiateButtons();
+        
         // Ab hier können Bildschirme erzeugt + gewechselt werden
         
         
         
-        bildschirmWechseln(BildschirmType.MEHRSPIELER);
+        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);

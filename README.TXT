@@ -8,7 +8,12 @@ AUTOR(EN): Q11-Informatik (Abiturjahrgang 2024)
 
 
 -TODO:
-    
-1.) DATEIPFAD in TexturManager anpassen (allgemeiner Pfad)
 
-2) Auswahlbildschirm_Lehrer so adjusten, dass im Mehrspieler Mode 2 Lehrer ausgewählt werden können
+1.) Button-Anordnung in Abhängigkeit von den Abmessungen des Bildschirmes angeben
+    --> z.B. new Button (TexturManager.BREITE / 2, TexturManager.HOEHE /4, ...);
+
+2.) Auswahlbildschirm_Lehrer so adjusten, dass im Mehrspieler Mode 2 Lehrer ausgewählt werden können
+
+3.) Klasse für Streckenabschnitte designen
+
+4.) Lehrerauswahl implementieren
