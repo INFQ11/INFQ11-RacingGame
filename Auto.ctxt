@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Auto
+comment1.params=x\ y\ groesse\ lehrer\ secondPlayer
+comment1.target=Auto(int,\ int,\ int,\ LEHRER,\ boolean)
+comment2.params=
+comment2.target=void\ tick()
+comment3.params=code
+comment3.target=void\ tasteReagieren(int)
+comment4.params=code
+comment4.target=void\ tasteLosgelassen(int)
+numComments=5

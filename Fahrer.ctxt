@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Fahrer
+comment1.params=x\ y\ groesse\ name\ lehrer\ secondPlayer
+comment1.target=Fahrer(int,\ int,\ int,\ java.lang.String,\ LEHRER,\ boolean)
+comment2.params=newLehrer
+comment2.target=void\ lehrerWechseln(LEHRER)
+comment3.params=
+comment3.target=ea.Raum\ getRaum()
+numComments=4

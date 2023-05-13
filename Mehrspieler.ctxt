@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Mehrspieler
+comment1.params=
+comment1.target=Mehrspieler()
+comment2.params=tastencode
+comment2.target=void\ tasteReagieren(int)
+numComments=3

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=TexturManager
+comment0.text=\r\n\ Klasse,\ die\ rein\ daf\u00FCr\ zust\u00E4ndig\ ist,\ wichtige/allgemeine\ Texturdaten\ zu\ sammeln\r\n\ z.B.\ Den\ allgemeinen\ Dateipfad\ zu\ den\ Bildern\ -->\ z.B.\ P\:\\\\Austausch\\\\Pictures\r\n\ \r\n\ Wenn\ dann\ ein\ Bild\ erzeugt\ wird\:\r\n\ \r\n\ new\ Bild\ (x,y,groesse,\ TexturManager.DATEIPFAD\ +\ "Button.png")\r\n\ -->\ Leichter\ m\u00F6glich,\ das\ Verzeichnis\ zu\ \u00E4ndern,\ ohne\ 500\ Bilder-Pfade\ austauschen\ zu\ m\u00FCssen\r\n
+comment1.params=
+comment1.target=TexturManager()
+numComments=2
