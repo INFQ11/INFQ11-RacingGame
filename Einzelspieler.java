@@ -7,8 +7,6 @@ public class Einzelspieler extends Bildschirm
     
     public Einzelspieler()
     {
-        // Ergänzung wenn wir die Gamedynamik programmieren
-        
         Fahrer fahrer = new Fahrer(0,0,100, "Player 1", LEHRER.BAUMGARTNER, false);
         wurzel.add(fahrer.getRaum());
     }

@@ -2,11 +2,11 @@
 
 public enum LEHRER
 {
-    EHRENTHALER ("Florian Ehrenthaler", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + ""), 
-    BAUMGARTNER ("Klaus Baumgartner", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + ""), 
-    GUST ("Verena Gust", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + ""), 
-    NEUMANN ("Christiane Neumann", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + ""), 
-    SCHATTL ("Karl Schlattl", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "");
+    EHRENTHALER ("Florian Ehrenthaler", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
+    BAUMGARTNER ("Klaus Baumgartner",   2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
+    GUST        ("Verena Gust",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
+    NEUMANN     ("Christiane Neumann",  2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
+    SCHATTL     ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "");
     
     private LEHRER(String name, float maxSpeed, float acceleration, float deceleration, String dateipfadAuto, String dateipfadIcon)
     {
