@@ -3,5 +3,7 @@
 /engine-alpha.log
 /*.class
 /*.ctxt
+/*.iml
+/.idea/
 
 doc/
