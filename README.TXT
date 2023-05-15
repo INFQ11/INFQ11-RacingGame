@@ -14,6 +14,6 @@ AUTOR(EN): Q11-Informatik (Abiturjahrgang 2024)
 
 2.) Auswahlbildschirm_Lehrer so adjusten, dass im Mehrspieler Mode 2 Lehrer ausgewählt werden können
 
-3.) Klasse für Streckenabschnitte designen
+3.) Klasse für Streckenabschnitte/Streckenelemente designen
 
 4.) Lehrerauswahl implementieren

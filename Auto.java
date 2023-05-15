@@ -14,14 +14,15 @@ public class Auto extends Bild
     private float rotspeed;
     private boolean accbool;
     
+    private boolean secondPlayer;
+    
     private String ee;
     
     // Werden nicht benutzt, nur zur Erinnerung 
     // Können auch nicht zB im Switch eingesetzt werden, da keine "constant expressions"
+    
     private static int [] STEUERUNG1 = {0, 3, 30};
     private static int [] STEUERUNG2 = {29, 27, 26};
-    private boolean secondPlayer;
-    
     
     public Auto(int x, int y, int groesse, LEHRER lehrer, boolean secondPlayer)
     {

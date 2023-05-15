@@ -1,3 +1,5 @@
+// Max E.
+
 import ea.*;
 
 import static org.junit.jupiter.api.Assertions.*;
