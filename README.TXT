@@ -17,3 +17,5 @@ AUTOR(EN): Q11-Informatik (Abiturjahrgang 2024)
 3.) Klasse für Streckenabschnitte/Streckenelemente designen
 
 4.) Lehrerauswahl implementieren
+
+5.) Bugs in RaceEngine fixen (siehe Mögliche Bugs ... .txt)
