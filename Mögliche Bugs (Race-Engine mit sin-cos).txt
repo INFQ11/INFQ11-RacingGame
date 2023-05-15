@@ -71,3 +71,9 @@ else
 direction = DIRECTION.NEUTRAL;
 }
 }
+
+Außerdem:
+Eventuell bei Steuerung mit WASD-Tasten trotzdem nicht mit Leertaste Gas geben,
+sondern mit W 
+(eventuell etwas more convenient als Leertaste := nach vorne)
+
