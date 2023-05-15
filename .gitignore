@@ -1,0 +1,7 @@
+# Alle Dateien, die nicht im Repository sind, sondern automatisch erstellt werden
+
+/engine-alpha.log
+/*.class
+/*.ctxt
+
+doc/
