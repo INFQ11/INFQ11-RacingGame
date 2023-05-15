@@ -1,0 +1,73 @@
+Mögliche Bugs:
+
+// DISCLAIMER: BITTE ÜBERPRÜFEN, BIN MIR NICHT SICHER, OB DAS ALLES ÜBERHAUPT STIMMT
+// HABS NICHT AUSPROBIERT, BINS NUR IM KOPF DURCHGEGANGEN
+
+1.) Methode tick()
+
+// Code
+
+if (speed < maxspeed)
+{
+speed += acc;
+}
+
+else 
+{
+
+if (speed > 0)
+{
+speed -= dec;
+}
+
+else 
+{
+speed = 0;
+}
+
+}
+
+--> Möglicher Bug bei den if-Conditions, da es sein kann, dass der speed zwar kleiner als der maxspeed ist, aber der speed + acc größer wäre als maxspeed --> Aber sehr geringe Auswirkungen, da der speed den maxspeed maximal um eine Zahl < acc überschreiten kann
+ABER eventuell unpraktisch im Mehrspieler, weil dann eine geringfügig schneller wäre
+
+--> Selber Bug auch bei (speed > 0), da speed zwar größer 0 sein könnte, aber - dec durchaus kleiner 0 sein könnte.
+--> Wieder sehr geringe Auswirkungen, aber eventuell im Mehrspieler wieder etwas blöd (hier aber nur für die zeitdauer von einem tick)
+--> Könnte trotzdem für einen klitzekleinen Ruckler sorgen (eventl. wegen schönem Stil ausbessern)
+
+2.) Methode tasteLosgelassen (int code)
+
+Problem: Angenommen, der Spieler würde gleichzeitig Leertaste UND rechts oder links drücken und dann eine auslassen 
+--> tasteLosgelassen() würde dafür sorgen, dass DIRECTION.NEUTRAL gesetzt wird und accbool auf false steht
+--> Fahrzeug würde verlangsamt werden
+
+Mögliche Lösung:
+
+public void tasteLosgelassen (int code)
+{
+if (code == 30) // Entspricht Leertaste
+{
+accbool = false;
+}
+
+direction = DIRECTION.NEUTRAL;
+}
+
+--> Direction würde immer auf Neutral gesetzt werden --> Wenn Leertaste ausgelassen wird, dann wird nicht mehr beschleunigt
+ABER: 
+Problem: Wenn Leertaste + Rechts/Links gedrückt ist und Leertaste ausgelassen wird, dann wird Direction wieder auf neutral gesetzt
+
+Mögliche Lösung:
+
+DIRECTION.NEUTRAL nur setzen, wenn NICHT Leertaste ausgelassen wird
+
+public void tasteLosgelassen (int code)
+{
+if (code == 30) // Entspricht Leertaste
+{
+accbool = false;
+}
+else
+{
+direction = DIRECTION.NEUTRAL;
+}
+}
