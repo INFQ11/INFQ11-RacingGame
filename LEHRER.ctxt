@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.target=LEHRER
-comment1.params=name\ maxSpeed\ acceleration\ deceleration\ dateipfadAuto\ dateipfadIcon
-comment1.target=LEHRER(java.lang.String,\ float,\ float,\ float,\ java.lang.String,\ java.lang.String)
-numComments=2
