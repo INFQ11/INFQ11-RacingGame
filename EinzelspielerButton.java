@@ -2,10 +2,10 @@ import ea.*;
 
 public class EinzelspielerButton extends Button
 {
-public EinzelspielerButton(float x, float y, int groesse, String newDateipfad)
-{
-        super(x, y, groesse, newDateipfad);
-}
+ public EinzelspielerButton(float x, float y, int groesse, String newDateipfad)
+ {
+     super(x, y, groesse, newDateipfad);
+ }
     
  public int getCode()
  {
@@ -14,6 +14,7 @@ public EinzelspielerButton(float x, float y, int groesse, String newDateipfad)
  
  public void gedrückt()
  {
-     
+     myGame.getInstance().gamemodeSetzen(GamemodeType.EINZELSPIELER);
+     myGame.getInstance().bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_LEHRER);
  }
 }

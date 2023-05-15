@@ -1,22 +1,26 @@
+/**
+ * @Author Konstantin S.
+ */
+
 import ea.*;
 
 public class Startbildschirm extends Bildschirm
 {
     public Startbildschirm()
     {
-        int breite = myGame.BREITE;
-        int höhe = myGame.HOEHE;
+        int breite = TexturManager.BREITE;
+        int höhe = TexturManager.HOEHE;
         
-        Bild bild = new Bild(0,0,breite, höhe,"D:\\Git Workspace\\Q11_Informatik_Template_Startmenü\\pictures\\Background.jpg");
+        Bild bild = new Bild(0,0,breite, höhe,TexturManager.DATEIPFAD + "Hintergrund.jpg");
         wurzel.add(bild);
         
-        /**
-         * Information: Buttons müssen nun nicht mehr in ButtonSammlung erzeugt
-         * oder angemeldet werden!
-         */
+        buttons[0].isActive = true;
+        wurzel.add(buttons[0]);
+    }
+    
+    @Override
+    public void tasteReagieren(int tastencode)
+    {
         
-        StartButton st = new StartButton(0,0,0,"");
-        st.isActive = true;
-        wurzel.add(st);
     }
 }

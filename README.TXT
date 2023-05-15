@@ -8,46 +8,12 @@ AUTOR(EN): Q11-Informatik (Abiturjahrgang 2024)
 
 
 -TODO:
-    
-1.) Erstellung der BildschirmTypes (Enum) + Erstellung der Bildschirmklassen (Unterklassen!)
-    
-    Benötigte Bildschirme:
-    - Startbildschirm
-    - Auswahlbildschirm_Lehrer
-    - Auswahlbildschirm_Spieler
-    - Spielbildschirm
-    
-2.) Implementierung der Methode "getBildschirm(BildschirmType)" in "Bildschirm"
-    --> Soll für den übergebenen Enum-Type den richtigen Bildschirm zurückliefern
-    
-3.) Singleton-Entwurfsmuster in Klasse myGame erstellen
 
-4.) Erstellung der benötigten Attribute in Klasse myGame (Maus, Bildschirm, BildschirmType)
+1.) Button-Anordnung in Abhängigkeit von den Abmessungen des Bildschirmes angeben
+    --> z.B. new Button (TexturManager.BREITE / 2, TexturManager.HOEHE /4, ...);
 
-5.) Anmeldung einer Maus
+2.) Auswahlbildschirm_Lehrer so adjusten, dass im Mehrspieler Mode 2 Lehrer ausgewählt werden können
 
-6.) Auskommentieren der Getter in myGame
+3.) Klasse für Streckenabschnitte/Streckenelemente designen
 
-7.) Methode "bildschirmWechseln" in Klasse myGame erstellen
-
-8.) Erstellung der Button-Klassen (Unterklassen von Button!)
-    + Überschreiben von getCode() und gedrückt()
-    
-    Benötigte Buttons:
-    - StartButton
-    - EinstellungenButton
-    - OKButton
-    - PfeilVorButton
-    - PfeilZurückButton
-    - ZurückButton
-    - MehrspielerButton
-    - EinzelspielerButton
-
-9.) Button-Sammlung --> Erzeugung der benötigten Buttons + Anmeldung bei ButtonVerwaltung + 
-    
-    
-10.) Button-Klassen --> "gedrückt()"-Methoden definieren + "getCode()"-Methoden definieren
-
-11.) Bildschirm-Klassen --> Hintergrundbilder hinzufügen, Benötigte Buttons jeweils auf active setzen + ALLES zur Wurzel adden
-
-12.) Button-Sammlung --> Genaue Definition der Koordinaten, Größen, Dateipfaden der Bilder, etc.
+4.) Lehrerauswahl implementieren

@@ -1,18 +1,46 @@
 import ea.*;
 
-public class myGame extends Game
+/**
+ * Spielsteuernde Klasse
+ */
+
+public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
 {
+    private static myGame instance;
+    
     private Maus maus;
+    
     private Bildschirm currentBildschirm;
     private BildschirmType currentBildschirmType;
     
-    private static myGame instance;
+    private GamemodeType currentGamemodeType;
     
-    static final int BREITE = 1280;
-        
-    static final int HOEHE = 720;
+    private static Auto autoSpieler1;
+    private static Auto autoSpieler2;
     
-    public void tasteReagieren(int tastencode) {}
+    public void tasteReagieren(int tastencode) 
+    {
+        currentBildschirm.tasteReagieren(tastencode);
+    }
+    
+    @Override
+    public void tick()
+    {
+        if (autoSpieler1 != null)
+            autoSpieler1.tick();
+            
+        if (autoSpieler2 != null)
+            autoSpieler2.tick();    
+    }
+    
+    public void tasteLosgelassen(int tastencode)
+    {
+        if (autoSpieler1 != null)
+            autoSpieler1.tasteLosgelassen(tastencode);
+            
+        if (autoSpieler2 != null)
+            autoSpieler2.tasteLosgelassen(tastencode);    
+    }
     
     public void bildschirmWechseln (BildschirmType bildschirm)
     {
@@ -22,55 +50,34 @@ public class myGame extends Game
         wurzel.add(currentBildschirm.getRaum());
     }
     
-    // Singleton-Entwurfsmuster fehlt!
+    public void gamemodeSetzen(GamemodeType gamemode)
+    {
+        currentGamemodeType = gamemode;
+    }
     
     public static myGame getInstance()
     {
         if (instance != null)
-        return instance;
-        else return instance = new myGame();
+            return instance;
+        else 
+            return instance = new myGame();
     }
     
     private myGame()
     {
-        super(BREITE, HOEHE);
-        
-        // Um überhaupt die Computermaus nutzen zu können, muss zuerst eine Maus erstellt + angemeldet werden
-        
-        /**
-         * Erstellung einer Maus + Anmeldung von jener in dem Bildschirm
-         */
-        // ...
+        super(TexturManager.BREITE, TexturManager.HOEHE);
         
         maus = new Maus(0);
         mausAnmelden(maus);
-        
-        /**
-         * Erstellung des Objekts der Klasse, welche die Button-Codes und dazugehörigen Aktionen verbindet/verwaltet 
-         */
-        
+
         ButtonVerwaltung.createInstance(this);
-        
-        // Ab hier können Bildschirme erzeugt + gewechselt werden
-        
-        // Zuerst muss zu dem Startbildschirm gewechselt werden
+        ButtonSammlung.instantiateButtons();
         
         bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
-    }
-    
-    /**
-         * CODE 0: STARTBUTTON
-         * CODE 1: EINSTELLUNGEN
-         * CODE 2: OK
-         * CODE 3: PFEILVOR
-         * CODE 4: PFEILZURÜCK
-         * CODE 5: ZURÜCK
-         * CODE 6: MEHRSPIELER
-         * CODE 7: EINZELSPIELER
-         */
         
-       
-    
+        manager.anmelden(this, 1);
+        tastenLosgelassenReagierbarAnmelden(this);
+    }
      
     public Maus getMaus() {return maus;}
     
@@ -80,7 +87,16 @@ public class myGame extends Game
     
     public Knoten getWurzel() {return wurzel;}
     
+    public GamemodeType getCurrentGamemodeType() {return currentGamemodeType;}
     
+    public Manager getManager() {return manager;}
     
-    }      
+    public static void setAutoSpieler1(Auto auto) {autoSpieler1 = auto;}
+    
+    public static Auto getAutoSpieler1() {return autoSpieler1;}
+    
+    public static void setAutoSpieler2(Auto auto) {autoSpieler2 = auto;}
+    
+    public static Auto getAutoSpieler2() {return autoSpieler2;}
+}      
 
