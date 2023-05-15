@@ -5,5 +5,9 @@
 /*.ctxt
 /*.iml
 /.idea/
-
+/dataSources/
+/dataSources.local.xml
 doc/
+/httpRequests/
+/shelf/
+/workspace.xml
