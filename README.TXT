@@ -16,6 +16,8 @@ AUTOR(EN): Q11-Informatik (Abiturjahrgang 2024)
 
 3.) Klasse für Streckenabschnitte/Streckenelemente designen
 
-4.) Lehrerauswahl implementieren
+4.) Lehrer-Enum richtig füllen (richtige Icons/Autos, etc.)
+
+5.) Lehrerauswahl-Elemente richtig anpassen
 
 
