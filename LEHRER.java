@@ -2,11 +2,19 @@
 
 public enum LEHRER
 {
-    EHRENTHALER ("Florian Ehrenthaler", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
-    BAUMGARTNER ("Klaus Baumgartner",   2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
-    GUST        ("Verena Gust",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
-    NEUMANN     ("Christiane Neumann",  2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + ""), 
-    SCHATTL     ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "");
+    EHRENTHALER ("Florian Ehrenthaler", 2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"), 
+    ADAM ("Klaus Baumgartner",   2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"), 
+    GUST        ("Verena Gust",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"), 
+    SCHMELMER     ("Christiane Neumann",  2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"), 
+    STUFFER    ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"),
+    PLEYER ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"),
+    LOISTL ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"),
+    SAUER ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"),
+    TREMMEL ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png"),
+    WECKER ("Karl Schlattl",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureCar.png")
+    
+    
+    ;
     
     private LEHRER(String name, float maxSpeed, float acceleration, float deceleration, String dateipfadAuto, String dateipfadIcon)
     {

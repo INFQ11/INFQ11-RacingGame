@@ -6,6 +6,8 @@ import ea.*;
 
 public class Auswahlbildschirm_Lehrer extends Bildschirm
 {
+    public static Lehrerauswahl lehrerauswahl;
+    
     public Auswahlbildschirm_Lehrer()
     {
         Bild background = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Hintergrund.jpg");
@@ -19,6 +21,9 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
         
         buttons[2].isActive = true;
         wurzel.add(buttons[2]);
+    
+        lehrerauswahl = new Lehrerauswahl();
+        wurzel.add(lehrerauswahl.getRaum());
     }
     
     @Override
@@ -26,4 +31,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
     {
         
     }
+
+    
+
 }
