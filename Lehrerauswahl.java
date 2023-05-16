@@ -21,7 +21,7 @@ public class Lehrerauswahl
     private final int xZusatz = 500;
     private final int yZusatz = 600;
     
-    public Lehrerauswahl()
+    public Lehrerauswahl(int xBild, int yBild, int xText, int yText, int xZusatz, int yZusatz)
     {
         lehrer = new LEHRER [10];
         
@@ -35,6 +35,16 @@ public class Lehrerauswahl
         lehrer[7] = LEHRER.SAUER;
         lehrer[8] = LEHRER.TREMMEL;
         lehrer[9] = LEHRER.WECKER;
+        
+        if (xBild < 0)
+        {
+                xBild = 500;
+                yBild = 400;
+               xText = 500;
+               yText = 550;
+               xZusatz = 500;
+                yZusatz = 600;
+        }
         
         currentIcon = new Bild(xBild,yBild, 50, lehrer[0].DATEIPFAD_ICON);
         currentText = new Text(xText,yText, lehrer[0].NAME);
