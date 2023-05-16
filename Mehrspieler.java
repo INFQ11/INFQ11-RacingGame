@@ -9,8 +9,8 @@ public class Mehrspieler extends Bildschirm
         Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Hintergrund.jpg");
         wurzel.add(bild);
         
-        Fahrer fahrer1 = new Fahrer(0,0, 50, "Fahrer 1", LEHRER.GUST, false);
-        Fahrer fahrer2 = new Fahrer(500,0, 50, "Fahrer 1", LEHRER.GUST, true);
+        Fahrer fahrer1 = new Fahrer(0,0, 100, "Fahrer 1", LEHRER.GUST, false);
+        Fahrer fahrer2 = new Fahrer(500,0, 100, "Fahrer 1", LEHRER.GUST, true);
         
         wurzel.add(fahrer1.getRaum());
         wurzel.add(fahrer2.getRaum());

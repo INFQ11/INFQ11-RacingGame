@@ -24,6 +24,7 @@ public class Fahrer
         this.punktzahl = 0;
         this.lehrer = lehrer;
         this.auto = new Auto(x,y,groesse, lehrer, secondPlayer);
+
         this.secondPlayer = secondPlayer;
         
         if (!secondPlayer)

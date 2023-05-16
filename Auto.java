@@ -38,6 +38,7 @@ public class Auto extends Bild
         
         this.aktivMachen();
         this.schwerkraftAktivSetzen(false);
+    
         
         this.direction = DIRECTION.NEUTRAL;
         this.secondPlayer = secondPlayer;

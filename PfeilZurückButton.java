@@ -14,7 +14,6 @@ public class PfeilZurückButton extends Button
  
  public void gedrückt()
  {
-    //myGame.getInstance().LehrerZurück();
-    System.out.println("zurück");
+    
  }
 }
