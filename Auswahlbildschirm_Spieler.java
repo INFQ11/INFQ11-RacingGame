@@ -8,7 +8,7 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
 {
     public Auswahlbildschirm_Spieler()
     {
-        Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Hintergrund.jpg");
+        Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Design-Pixel.png");
         wurzel.add(bild);
         
         buttons[6].isActive = true;
