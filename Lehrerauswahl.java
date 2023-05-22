@@ -43,7 +43,7 @@ public class Lehrerauswahl
         lehrer[8] = LEHRER.TREMMEL;
         lehrer[9] = LEHRER.WECKER;
         
-        index = 2;
+        index = 0;
         
         currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
