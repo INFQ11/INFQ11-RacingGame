@@ -2,16 +2,16 @@
 
 public enum LEHRER
 {
-    EHRENTHALER     ("Florian Ehrenthaler",     2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Ehrenthaler.png",      ""), 
-    ADAM            ("Klaus Baumgartner",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Adam.png",             ""), 
-    GUST            ("Verena Gust",             2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Gust.png", TexturManager.DATEIPFAD + "Auto_Gust.png", TexturManager.DATEIPFAD + "Gust.png",   ""), 
-    SCHMELMER       ("Anton Schmelmer",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Schmelmer.png" ,        ""), 
-    STUFFER         ("Manuel Stuffer",          2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Stuffer.png" ,         ""),
-    PLEYER          ("Christine Pleyer",        2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Pleyer.png", TexturManager.DATEIPFAD + "Auto_Pleyer.png", TexturManager.DATEIPFAD + "Pleyer.png" ,      ""),
-    LOISTL          ("Florian Loistl",          2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Loistl.png",             ""),
-    SAUER           ("Daniel Sauer",            2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Sauer.png" ,            ""),
-    TREMMEL         ("Andreas Tremmel",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Tremmel.png",          ""),
-    WECKER          ("Stefan Wecker",           2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "", TexturManager.DATEIPFAD + "Wecker.png",           "")
+    EHRENTHALER     ("Florian Ehrenthaler",     2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureIcon.png",  TexturManager.DATEIPFAD + "Ehrenthaler.png",            ""), 
+    ADAM            ("Klaus Baumgartner",       2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Adam.png",                   ""), 
+    GUST            ("Verena Gust",             2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Gust.png",    TexturManager.DATEIPFAD + "StructureIcon.png",  TexturManager.DATEIPFAD + "Gust.png",                   ""), 
+    SCHMELMER       ("Anton Schmelmer",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Schmelmer.png" ,             ""), 
+    STUFFER         ("Manuel Stuffer",          2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Stuffer.png" ,               ""),
+    PLEYER          ("Christine Pleyer",        2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Pleyer.png",  TexturManager.DATEIPFAD + "StructureIcon.png",  TexturManager.DATEIPFAD + "Pleyer.png" ,                ""),
+    LOISTL          ("Florian Loistl",          2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Loistl.png",                 ""),
+    SAUER           ("Daniel Sauer",            2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Sauer.png" ,                 ""),
+    TREMMEL         ("Andreas Tremmel",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Tremmel.png",                ""),
+    WECKER          ("Stefan Wecker",           2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "",                   TexturManager.DATEIPFAD + "Wecker.png",                 "")
     
     
     ;
