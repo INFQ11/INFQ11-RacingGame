@@ -28,10 +28,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         currentBildschirm.tasteReagieren(tastencode);
     }
 
-    public static void main(String... Args)
-    {
-        getInstance();
-    }
     
     @Override
     public void tick()
