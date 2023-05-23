@@ -18,10 +18,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     private static Auto autoSpieler1;
     private static Auto autoSpieler2;
 
-    public static void main (String [] args)
-    {
-    myGame.getInstance();
-    }
 
     public void tasteReagieren(int tastencode) 
     {
