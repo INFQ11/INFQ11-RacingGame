@@ -18,7 +18,7 @@ public class TexturManager
           throw new UnsupportedOperationException("Do not instantiate this class");
       }
       
-      public static final int BREITE = 1280;
-      public static final int HOEHE = 720;
+      public static final int BREITE = 1920;
+      public static final int HOEHE = 1080;
       public static final String DATEIPFAD = "Resources/Pictures/";
 }
