@@ -42,13 +42,13 @@ public class ButtonVerwaltung implements MausReagierbar
             buttons[button.getCode()] = button;
         }
         
-        
         /**
          * Reagiert auf das Klicken auf verschiedene Objekte, welche durch ihren eindeutigen Code bestimmt sind
          */
+        @Override
          public void mausReagieren (int code)
         {
         if (buttons[code] != null && buttons[code].isActive)
-            buttons[code].gedrückt();
+            buttons[code].gedrückt();   
         }
 }

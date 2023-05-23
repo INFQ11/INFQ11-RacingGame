@@ -6,22 +6,14 @@ public class ButtonSammlung
 {
     public static void instantiateButtons()
     {
-        StartButton st = new StartButton(865,360,130,TexturManager.DATEIPFAD + "Startbutton.png");
-        ButtonVerwaltung.getInstance().buttonAnmelden(st);
+        StartButton st = new StartButton(865,360,100,TexturManager.DATEIPFAD + "StartButton.png");
         
-        MehrspielerButton mb = new MehrspielerButton(350,0,100,TexturManager.DATEIPFAD + "Mehrspielerbutton.png");
-        ButtonVerwaltung.getInstance().buttonAnmelden(mb);
+        MehrspielerButton mb = new MehrspielerButton(350,0,100,TexturManager.DATEIPFAD + "MehrspielerButton.png");
         
-        EinzelspielerButton eb = new EinzelspielerButton(700,0,100,TexturManager.DATEIPFAD + "Einspielerbutton.png");
-        ButtonVerwaltung.getInstance().buttonAnmelden(eb);
+        EinzelspielerButton eb = new EinzelspielerButton(700,0,100,TexturManager.DATEIPFAD + "EinzelspielerButton.png");
         
-        PfeilVorButton PVB = new PfeilVorButton(0,0,50,TexturManager.DATEIPFAD + "StructureButton.png");
-        ButtonVerwaltung.getInstance().buttonAnmelden(PVB);
+        PfeilVorButton PVB = new PfeilVorButton(500,680,100,TexturManager.DATEIPFAD + "PfeilVorButton.png");
         
-        PfeilZurückButton PZB = new PfeilZurückButton(350,0,50,TexturManager.DATEIPFAD + "StructureButton.png");
-        ButtonVerwaltung.getInstance().buttonAnmelden(PZB);
-        
-        OKButton okb = new OKButton(700,0,50,TexturManager.DATEIPFAD + "StructureButton.png");
-        ButtonVerwaltung.getInstance().buttonAnmelden(okb);
+        OKButton okb = new OKButton(550,680,100,TexturManager.DATEIPFAD + "OKButton.png");
     }
 }
