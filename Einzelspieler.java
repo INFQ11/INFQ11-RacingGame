@@ -7,7 +7,7 @@ public class Einzelspieler extends Bildschirm
     
     public Einzelspieler()
     {
-        //Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Hintergrund.jpg");
+        //Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Einzelspieler.png");
         //wurzel.add(bild);
         
         Fahrer fahrer = new Fahrer(0,0,50, "Player 1", LEHRER.GUST, false);
