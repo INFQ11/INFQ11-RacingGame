@@ -8,10 +8,7 @@ public class Startbildschirm extends Bildschirm
 {
     public Startbildschirm()
     {
-        int breite = TexturManager.BREITE;
-        int höhe = TexturManager.HOEHE;
-        
-        Bild bild = new Bild(0,0,breite, höhe,TexturManager.DATEIPFAD + "Hintergrund.jpg");
+        Bild bild = new Bild(0,0,35,TexturManager.DATEIPFAD + "Startbildschirm (Pixel).png");
         wurzel.add(bild);
         
         buttons[0].isActive = true;

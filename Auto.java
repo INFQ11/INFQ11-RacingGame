@@ -38,6 +38,7 @@ public class Auto extends Bild
         
         this.aktivMachen();
         this.schwerkraftAktivSetzen(false);
+    
         
         this.direction = DIRECTION.NEUTRAL;
         this.secondPlayer = secondPlayer;
@@ -111,7 +112,7 @@ public class Auto extends Bild
     direction = DIRECTION.RIGHT;
     break;
 
-    case 30:
+    case 30,22:
     accbool = true;
 
     default:
@@ -182,7 +183,7 @@ public class Auto extends Bild
     }
     break;
 
-    case 30:
+    case 30,22:
     accbool = false;
 
     default:

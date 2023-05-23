@@ -17,7 +17,12 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     private static Auto autoSpieler1;
     private static Auto autoSpieler2;
-    
+
+    public static void main (String [] args)
+    {
+    myGame.getInstance();
+    }
+
     public void tasteReagieren(int tastencode) 
     {
         currentBildschirm.tasteReagieren(tastencode);
@@ -73,7 +78,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         ButtonVerwaltung.createInstance(this);
         ButtonSammlung.instantiateButtons();
         
-        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
+        bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_LEHRER);
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);
