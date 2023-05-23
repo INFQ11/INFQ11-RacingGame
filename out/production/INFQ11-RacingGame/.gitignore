@@ -1,0 +1,13 @@
+# Alle Dateien, die nicht im Repository sind, sondern automatisch erstellt werden
+
+/engine-alpha.log
+/*.class
+/*.ctxt
+/*.iml
+/.idea/
+/dataSources/
+/dataSources.local.xml
+doc/
+/httpRequests/
+/shelf/
+/workspace.xml
