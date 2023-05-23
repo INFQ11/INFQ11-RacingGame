@@ -10,7 +10,7 @@ public class ButtonSammlung
         
         MehrspielerButton mb = new MehrspielerButton(350,0,100,TexturManager.DATEIPFAD + "MehrspielerButton.png");
         
-        EinzelspielerButton eb = new EinzelspielerButton(700,0,100,TexturManager.DATEIPFAD + "EinzelspielerButton.png");
+        EinzelspielerButton eb = new EinzelspielerButton(700,0,100,TexturManager.DATEIPFAD + "EinspielerButton.png");
         
         PfeilVorButton PVB = new PfeilVorButton(500,680,100,TexturManager.DATEIPFAD + "PfeilVorButton.png");
         
