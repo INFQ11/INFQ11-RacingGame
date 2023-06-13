@@ -19,7 +19,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
         buttons[2].isActive = true;
         wurzel.add(buttons[2]);
     
-        lehrerauswahl = new Lehrerauswahl(500,400,650,400,500,600);
+        lehrerauswahl = new Lehrerauswahl(500,400,650,400);
         wurzel.add(lehrerauswahl.getRaum());
     }
     

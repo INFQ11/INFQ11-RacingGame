@@ -18,17 +18,13 @@ public class Lehrerauswahl
     private int yIcon;
     private int xName;
     private int yName;
-    private int xZusatz;
-    private int yZusatz;
     
-    public Lehrerauswahl(int xIcon, int yIcon, int xName, int yName, int xZusatz, int yZusatz)
+    public Lehrerauswahl(int xIcon, int yIcon, int xName, int yName)
     {
         this.xIcon = xIcon;
         this.yIcon = yIcon;
         this.xName = xName;
         this.yName = yName;
-        this.xZusatz = xZusatz;
-        this.yZusatz = yZusatz;
         
         lehrer = new LEHRER [10];
         
@@ -48,30 +44,16 @@ public class Lehrerauswahl
         currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
         
-        if ( !lehrer[index].DATEIPFAD_ZUSATZ.isBlank() ) 
-            {
-                currentZusatz = new Bild(xZusatz,yZusatz, 50, lehrer[index].DATEIPFAD_ZUSATZ);
-                wurzel.add(currentZusatz);
-            }
-        
-        
         wurzel.add(currentIcon);
         wurzel.add(currentName);
     }
-
+    
     public void lehrerNachRechts()
     {
         index = (index + 1)%lehrer.length;
         
         wurzel.entfernen(currentIcon);
         wurzel.entfernen(currentName);
-        
-        if (!lehrer[index].DATEIPFAD_ZUSATZ.isBlank())
-        {
-            wurzel.entfernen(currentZusatz);
-            currentZusatz = new Bild(xZusatz,yZusatz, 100, lehrer[index].DATEIPFAD_ZUSATZ);
-            wurzel.add(currentZusatz);
-        }
     
         currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
