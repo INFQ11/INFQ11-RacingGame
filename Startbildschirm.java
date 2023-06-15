@@ -11,8 +11,8 @@ public class Startbildschirm extends Bildschirm
         Bild bild = new Bild(0,0,67,TexturManager.DATEIPFAD + "Startbildschirm.png");
         wurzel.add(bild);
         
-        buttons[0].isActive = true;
-        wurzel.add(buttons[0]);
+        ButtonFacade.getButton(ButtonType.START).setActive(true);
+        wurzel.add(ButtonFacade.getButton(ButtonType.START));
     }
     
     @Override

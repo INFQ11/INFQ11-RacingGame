@@ -11,11 +11,11 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
         Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Startbildschirm.png");
         wurzel.add(bild);
         
-        buttons[6].isActive = true;
-        wurzel.add(buttons[6]);
+        ButtonFacade.getButton(ButtonType.EINSPIELER).setActive(true);
+        wurzel.add(ButtonFacade.getButton(ButtonType.EINSPIELER));
         
-        buttons[7].isActive = true;
-        wurzel.add(buttons[7]);
+        ButtonFacade.getButton(ButtonType.MEHRSPIELER).setActive(true);
+        wurzel.add(ButtonFacade.getButton(ButtonType.MEHRSPIELER));
     }
     
     @Override

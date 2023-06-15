@@ -27,20 +27,29 @@ public class Fahrer
 
         this.secondPlayer = secondPlayer;
         
-        if (!secondPlayer)
-            myGame.setAutoSpieler1(auto);
-        else myGame.setAutoSpieler2(auto);    
+        FahrerFacade.addFahrer(this);   
     }
     
     public void lehrerWechseln(LEHRER newLehrer)
     {
         this.lehrer = newLehrer;
         this.auto = new Auto(x,y,groesse, lehrer, secondPlayer);
-        
-        if (!secondPlayer)
-            myGame.setAutoSpieler1(auto);
-        else myGame.setAutoSpieler2(auto);
     }
     
     public Raum getRaum() {return this.auto;}
+    
+    public void tasteReagieren(int code)
+    {
+        this.auto.tasteReagieren(code);
+    }
+    
+    public void tasteLosgelassen(int code)
+    {
+        this.auto.tasteLosgelassen(code);
+    }
+    
+    public void tick()
+    {
+        this.auto.tick();
+    }
 }

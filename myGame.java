@@ -2,6 +2,7 @@ import ea.*;
 
 /**
  * Spielsteuernde Klasse
+ * @author: literaly everyone
  */
 
 public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
@@ -14,13 +15,11 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     private BildschirmType currentBildschirmType;
     
     private GamemodeType currentGamemodeType;
-    
-    private static Auto autoSpieler1;
-    private static Auto autoSpieler2;
 
     public void tasteReagieren(int tastencode) 
     {
-        currentBildschirm.tasteReagieren(tastencode);
+        SteuerungFacade.tasteReagieren(tastencode);
+        
         if (tastencode == 12)
             mausAnmelden(maus);
     }
@@ -33,27 +32,19 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     @Override
     public void tick()
     {
-        if (autoSpieler1 != null)
-            autoSpieler1.tick();
-            
-        if (autoSpieler2 != null)
-            autoSpieler2.tick();    
+        SteuerungFacade.tick();
     }
     
     public void tasteLosgelassen(int tastencode)
     {
-        if (autoSpieler1 != null)
-            autoSpieler1.tasteLosgelassen(tastencode);
-            
-        if (autoSpieler2 != null)
-            autoSpieler2.tasteLosgelassen(tastencode);    
+        SteuerungFacade.tasteLosgelassen(tastencode);   
     }
     
     public void bildschirmWechseln (BildschirmType bildschirm)
     {
         wurzel.leeren();
         currentBildschirmType = bildschirm;
-        currentBildschirm = Bildschirm.getBildschirm(bildschirm);
+        currentBildschirm = BildschirmFacade.getBildschirm(bildschirm);
         wurzel.add(currentBildschirm.getRaum());
     }
     
@@ -76,17 +67,13 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         
         maus = new Maus(0);
 
-        ButtonVerwaltung.createInstance(this);
-        ButtonSammlung.instantiateButtons();
+        ButtonFacade.instantiateFacade(this);
+        BildschirmFacade.instantiateFacade(this);
         
         bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);
-
-        //Bild bild = new Bild(50, 50, 20, "C://Users//KSilb//downloads//ausschnitt.png");
-        //wurzel.add(bild);
-        //bild.passivMachen();
     }
      
     public Maus getMaus() {return maus;}
@@ -101,12 +88,5 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     public Manager getManager() {return manager;}
     
-    public static void setAutoSpieler1(Auto auto) {autoSpieler1 = auto;}
-    
-    public static Auto getAutoSpieler1() {return autoSpieler1;}
-    
-    public static void setAutoSpieler2(Auto auto) {autoSpieler2 = auto;}
-    
-    public static Auto getAutoSpieler2() {return autoSpieler2;}
 }      
 
