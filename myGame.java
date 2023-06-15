@@ -2,6 +2,7 @@ import ea.*;
 
 /**
  * Spielsteuernde Klasse
+ * @author: literaly everyone
  */
 
 public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
