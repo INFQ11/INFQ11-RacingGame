@@ -84,6 +84,8 @@ public class Auto extends Figur
     speed = 0;
     }
 
+
+
     }
 
     angle = angle % 360; //Angle Range Control
@@ -155,7 +157,7 @@ public class Auto extends Figur
     {
     accbool = false;
     direction = DIRECTION.NEUTRAL;
-    myGame.getInstance().sicherheitsFrage("Congratulations, you found the EasterEgg of this Game and with it, the names of its creators: Constantin Holzfurtner, Maximilian Emberger");
+    myGame.getInstance().sicherheitsFrage("Congratulations, you found the EasterEgg of this Game and with it, the names of its creators: Hurensohn, Maximilian Emberger and Konstantin Silberbauer");
     ee = "aaaaaaaaaaaaaaaaaaaaaa";
     }
 
