@@ -19,11 +19,6 @@ public class Mehrspieler extends Bildschirm
     public void tasteReagieren(int tastencode)
     {
         // TODO: Abprüfen, für welches Auto die Kommandos zählen sollen
-        
-        if (myGame.getAutoSpieler1() != null)
-            myGame.getAutoSpieler1().tasteReagieren(tastencode);
-            
-        if (myGame.getAutoSpieler2() != null)
-            myGame.getAutoSpieler2().tasteReagieren(tastencode);
+
     }
 }
