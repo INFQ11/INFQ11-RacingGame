@@ -6,8 +6,6 @@ public abstract class Bildschirm
 {
     protected Knoten wurzel = new Knoten();
     
-    protected Button [] buttons = ButtonVerwaltung.getInstance().getButtons();
-    
      public static Bildschirm getBildschirm(BildschirmType bildschirm)
     {
         
@@ -29,10 +27,7 @@ public abstract class Bildschirm
     
     public Bildschirm()
     {
-        for (Button b : ButtonVerwaltung.getInstance().getButtons())
-        {
-            if (b!= null) b.isActive = false;
-        }
+        ButtonFacade.resetButtons();
     }
     
     public Raum getRaum(){return wurzel;}

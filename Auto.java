@@ -2,7 +2,7 @@
 
 import ea.*;
 
-public class Auto extends Figur
+public class Auto extends Bild
 {
     private DIRECTION direction;
     
