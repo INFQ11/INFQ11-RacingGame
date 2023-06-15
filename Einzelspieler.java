@@ -1,4 +1,4 @@
-// Konstantin Silberbauer
+// Konstantin Silberbauer Q11
 
 import ea.*;
 
