@@ -2,7 +2,7 @@
 
 import ea.*;
 
-public class Auto extends Bild
+public class Auto extends Figur
 {
     private DIRECTION direction;
     
@@ -26,7 +26,7 @@ public class Auto extends Bild
     
     public Auto(int x, int y, int groesse, LEHRER lehrer, boolean secondPlayer)
     {
-        super(x, y, groesse, lehrer.DATEIPFAD_AUTO);
+        super(lehrer.DATEIPFAD_AUTO);
         
         this.speed = 0f;
         this.maxspeed = lehrer.MAXSPEED;
@@ -83,6 +83,8 @@ public class Auto extends Bild
     {
     speed = 0;
     }
+
+
 
     }
 
@@ -155,7 +157,7 @@ public class Auto extends Bild
     {
     accbool = false;
     direction = DIRECTION.NEUTRAL;
-    myGame.getInstance().sicherheitsFrage("Congratulations, you found the EasterEgg of this Game and with it, the names of its creators: Constantin Holzfurtner, Maximilian Emberger");
+    myGame.getInstance().sicherheitsFrage("Congratulations, you found the EasterEgg of this Game and with it, the names of its creators: Hurensohn, Maximilian Emberger and Konstantin Silberbauer");
     ee = "aaaaaaaaaaaaaaaaaaaaaa";
     }
 

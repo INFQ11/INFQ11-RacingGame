@@ -18,10 +18,11 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     private static Auto autoSpieler1;
     private static Auto autoSpieler2;
 
-
     public void tasteReagieren(int tastencode) 
     {
         currentBildschirm.tasteReagieren(tastencode);
+        if (tastencode == 12)
+            mausAnmelden(maus);
     }
 
     public static void main (String ... args)
@@ -74,7 +75,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         super(TexturManager.BREITE, TexturManager.HOEHE);
         
         maus = new Maus(0);
-        mausAnmelden(maus);
 
         ButtonVerwaltung.createInstance(this);
         ButtonSammlung.instantiateButtons();
@@ -83,6 +83,10 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);
+
+        //Bild bild = new Bild(50, 50, 20, "C://Users//KSilb//downloads//ausschnitt.png");
+        //wurzel.add(bild);
+        //bild.passivMachen();
     }
      
     public Maus getMaus() {return maus;}
