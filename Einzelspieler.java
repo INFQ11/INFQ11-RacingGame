@@ -1,4 +1,4 @@
-// Konstantin S.
+// Konstantin Silberbauer
 
 import ea.*;
 
