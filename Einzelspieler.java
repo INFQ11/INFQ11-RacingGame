@@ -12,7 +12,7 @@ public class Einzelspieler extends Bildschirm
         //Bild bild = new Bild(500,500,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Startbildschirm.png");
         //wurzel.add(bild);
 
-        Bild b = new Bild(0, 0, 300, "C://Users//KSilb//downloads//Strecke.png");
+        Bild b = new Bild(0, 0, 300, "Strecke.png");
         wurzel.add(b);
 
         Fahrer fahrer = new Fahrer(100,100,20, "Player 1", LEHRER.GUST, false);
