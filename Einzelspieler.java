@@ -9,9 +9,6 @@ public class Einzelspieler extends Bildschirm
     {
 
 
-        //Bild bild = new Bild(500,500,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Startbildschirm.png");
-        //wurzel.add(bild);
-
         Bild b = new Bild(0, 0, 300, TexturManager.DATEIPFAD + "Strecke.png");
         wurzel.add(b);
 
