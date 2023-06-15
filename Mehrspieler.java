@@ -6,7 +6,7 @@ public class Mehrspieler extends Bildschirm
 {
     public Mehrspieler()
     {
-        Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,"Strecke.png");
+        Bild bild = new Bild(0,0,TexturManager.BREITE, TexturManager.HOEHE,TexturManager.DATEIPFAD + "Strecke.png");
         wurzel.add(bild);
         
         Fahrer fahrer1 = new Fahrer(TexturManager.BREITE/2,TexturManager.HOEHE/2, 100, "Fahrer 1", LEHRER.GUST, false);
