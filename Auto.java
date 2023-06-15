@@ -2,7 +2,7 @@
 
 import ea.*;
 
-public class Auto extends Bild
+public class Auto extends Figur
 {
     private DIRECTION direction;
     
@@ -26,7 +26,7 @@ public class Auto extends Bild
     
     public Auto(int x, int y, int groesse, LEHRER lehrer, boolean secondPlayer)
     {
-        super(x, y, groesse, lehrer.DATEIPFAD_AUTO);
+        super(lehrer.DATEIPFAD_AUTO);
         
         this.speed = 0f;
         this.maxspeed = lehrer.MAXSPEED;

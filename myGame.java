@@ -83,6 +83,10 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);
+
+        //Bild bild = new Bild(50, 50, 20, "C://Users//KSilb//downloads//ausschnitt.png");
+        //wurzel.add(bild);
+        //bild.passivMachen();
     }
      
     public Maus getMaus() {return maus;}
