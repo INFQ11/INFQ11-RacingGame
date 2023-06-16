@@ -10,7 +10,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
     
     public Auswahlbildschirm_Lehrer()
     {
-        Bild background = new Bild(0,0, 67,TexturManager.DATEIPFAD + "Einzelspieler.png");
+        Bild background = new Bild(0,0, 30,TexturManager.DATEIPFAD + "Einzelspieler.png");
         wurzel.add(background);
         
         ButtonFacade.getButton(ButtonType.OK).setActive(true);
@@ -19,7 +19,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
         ButtonFacade.getButton(ButtonType.PFEILVOR).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.PFEILVOR));
     
-        lehrerauswahl = new Lehrerauswahl(500,400,650,400);
+        lehrerauswahl = new Lehrerauswahl(500,400,650,400,500,600);
         wurzel.add(lehrerauswahl.getRaum());
     }
     
