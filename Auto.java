@@ -26,7 +26,7 @@ public class Auto extends Bild
     
     public Auto(int x, int y, int groesse, LEHRER lehrer, boolean secondPlayer)
     {
-        super(lehrer.DATEIPFAD_AUTO);
+        super(x,y,groesse, lehrer.DATEIPFAD_AUTO);
         
         this.speed = 0f;
         this.maxspeed = lehrer.MAXSPEED;
@@ -91,6 +91,8 @@ public class Auto extends Bild
     angle = angle % 360; //Angle Range Control
     
     this.bewegen(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
+    
+    myGame.getInstance().getCam().positionSetzen(this.getX() - TexturManager.BREITE/2, this.getY() - TexturManager.HOEHE/2);
     
     this.drehenAbsolut(angle);
     }

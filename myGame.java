@@ -39,6 +39,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     {
         SteuerungFacade.tasteLosgelassen(tastencode);   
     }
+
     
     public void bildschirmWechseln (BildschirmType bildschirm)
     {
@@ -88,5 +89,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     public Manager getManager() {return manager;}
     
+    public Kamera getCam() {return cam;}
 }      
 
