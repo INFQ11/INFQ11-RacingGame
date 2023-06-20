@@ -92,7 +92,7 @@ public class Auto extends Bild
     
     this.bewegen(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
     
-    myGame.getInstance().getCam().positionSetzen(this.getX() - TexturManager.BREITE/2, this.getY() - TexturManager.HOEHE/2);
+    myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
     
     this.drehenAbsolut(angle);
     }
