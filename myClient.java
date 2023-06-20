@@ -2,29 +2,34 @@ import ea.*;
 
 public class myClient extends Client
 {
-    public myClient (String ip)
+    private String prefix;
+    private int freePort = -1;
+    private int port;
+    
+    public myClient (String ip, int port, String prefix)
     {
-        super(ip, 7654);
-        
+        super(ip, port);
+        this.prefix = prefix;
+        this.port = port;
         warteAufVerbindung();
     }
     
     @Override
     public void empfangeInt(int inputInteger)
     {
-        
+        this.freePort = inputInteger;
     }
     
     @Override
     public void empfangeByte(byte inputByte)
     {
-        System.out.println(inputByte);
+
     }
     
     @Override
     public void empfangeString(String inputString)
     {
-        
+         
     }
     
     @Override 
@@ -37,5 +42,15 @@ public class myClient extends Client
     public void sendeString(String var)
     {
         
+    }
+    
+    public int getPort()
+    {
+        return port;
+    }
+    
+    public int getFreePort()
+    {
+        return freePort;
     }
 }

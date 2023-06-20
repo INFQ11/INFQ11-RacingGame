@@ -1,33 +1,44 @@
 import ea.*;
 import java.util.ArrayList;
 
-public class myServer
+public class myServer implements Empfaenger
 {
-    
-    public static void main (String [] args)
-    {
-        myServer server = new myServer();
-        myClient client = new myClient("192.168.220.170");
-        
-        server.addHandler1();
-    }
-    
     private Server server;
     
-    private ClientHandler handler1, handler2;
+    public myServer(int port)
+    {
+        server = new Server(port);
+        
+        server.globalenEmpfaengerSetzen(this);
+    }
 
-    public myServer()
+    // Empfangen-Methoden
+    
+    @Override 
+    public void verbindungBeendet()
     {
-        server = new Server(7654);
+        
     }
     
-    public void addHandler1()
+    public void empfangeString(String inputString)
     {
-        handler1 = new ClientHandler(server.naechsteVerbindungAusgeben());
+        if (inputString.equals(myGame.REQUEST_FREE_PORT))
+        {
+            server.sendeInt(ServerController.getInstance().getFreePort());
+        }
+        else
+        {
+        server.sendeString(inputString);
+        }   
     }
     
-    public void addHandler2()
-    {
-        handler2 = new ClientHandler(server.naechsteVerbindungAusgeben());
-    }
+    public void empfangeInt(int var){}
+    
+    public void empfangeBoolean(boolean var){}
+    
+    public void empfangeChar(char var){}
+    
+    public void empfangeByte(byte var){}
+    
+    public void empfangeDouble(double var){}
 }
