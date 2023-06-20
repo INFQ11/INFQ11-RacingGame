@@ -29,19 +29,42 @@ public class myClient extends Client
     @Override
     public void empfangeString(String inputString)
     {
-         
+         if (inputString.startsWith(myGame.getInstance().getPrefix()))
+         {
+            String [] tokens = inputString.trim().split("\\s+");
+            
+            Punkt position = parsePoint(tokens[1], tokens[2]);
+            int rotation = parseInteger(tokens[3]);
+         }
+         else
+         {
+             
+         }
     }
     
-    @Override 
-    public void sendeInt(int var)
+    public Punkt parsePoint(String xStr, String yStr)
     {
-        
+       try
+       {
+           int x = Integer.parseInt(xStr);
+           int y = Integer.parseInt(yStr);
+           
+           return new Punkt(x,y);
+       } catch (NumberFormatException e) {}
+       
+       throw new UnsupportedOperationException("Wrong number format");
     }
     
-    @Override
-    public void sendeString(String var)
+    public int parseInteger(String numStr)
     {
-        
+        try
+       {
+           int num = Integer.parseInt(numStr);
+           
+           return num;
+       } catch (NumberFormatException e) {}
+       
+       throw new UnsupportedOperationException("Wrong number format");
     }
     
     public int getPort()

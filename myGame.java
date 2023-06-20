@@ -11,7 +11,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     private myClient client;
     public static final int STANDARD_PORT = 7000;
-    public static final String IP = "192.168.178.103";
+    public static final String IP = "192.168.178.65";
     public static final String REQUEST_FREE_PORT = "RFP";
     private String prefix = "X";
     
@@ -126,6 +126,8 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         client.sendeString(REQUEST_FREE_PORT);
         prefix = "A";
         
+        while (client.getFreePort() == -1) {}
+        
         client = new myClient(IP, client.getFreePort(), prefix);
     }
     
@@ -151,5 +153,10 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     public Manager getManager() {return manager;}
     
     public Kamera getCam() {return cam;}
+    
+    public String getPrefix()
+    {
+        return prefix;
+    }
 }      
 

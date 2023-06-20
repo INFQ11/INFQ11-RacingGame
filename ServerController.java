@@ -57,7 +57,7 @@ public class ServerController
             
         serverMap.put(freePort, new myServer(freePort));
         freePorts.remove(freePort);
-        System.out.println("Recieved port" + freePort);
+        System.out.println("Recieved port " + freePort);
         return freePort;
     }
 }
