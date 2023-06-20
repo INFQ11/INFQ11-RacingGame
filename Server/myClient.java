@@ -1,3 +1,5 @@
+package Server;
+
 import ea.*;
 
 public class myClient extends Client
@@ -26,28 +28,34 @@ public class myClient extends Client
 
     }
     
+    /*
     @Override
     public void empfangeString(String inputString)
     {
-         if (inputString.startsWith(myGame.getInstance().getPrefix()))
+         if (!
+         inputString.startsWith(myGame.getInstance().getPrefix()))
          {
             String [] tokens = inputString.trim().split("\\s+");
             
             Punkt position = parsePoint(tokens[1], tokens[2]);
-            int rotation = parseInteger(tokens[3]);
+            float rotation = parseFloat(tokens[3]);
+            
+            FahrerFacade.getFahrer2().moveCar(position, rotation);
          }
          else
          {
              
          }
-    }
+        }
+         */
+    
     
     public Punkt parsePoint(String xStr, String yStr)
     {
        try
        {
-           int x = Integer.parseInt(xStr);
-           int y = Integer.parseInt(yStr);
+           float x = Float.parseFloat(xStr);
+           float y = Float.parseFloat(yStr);
            
            return new Punkt(x,y);
        } catch (NumberFormatException e) {}
@@ -55,11 +63,11 @@ public class myClient extends Client
        throw new UnsupportedOperationException("Wrong number format");
     }
     
-    public int parseInteger(String numStr)
+    public float parseFloat(String numStr)
     {
         try
        {
-           int num = Integer.parseInt(numStr);
+           float num = Float.parseFloat(numStr);
            
            return num;
        } catch (NumberFormatException e) {}

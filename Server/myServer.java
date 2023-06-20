@@ -1,3 +1,6 @@
+package Server;
+
+
 import ea.*;
 import java.util.ArrayList;
 
@@ -27,6 +30,7 @@ public class myServer implements Empfaenger
     
     public void empfangeString(String inputString)
     {
+        /*
         if (inputString.equals(myGame.REQUEST_FREE_PORT))
         {
             server.sendeInt(ServerController.getInstance().getFreePort());
@@ -35,7 +39,9 @@ public class myServer implements Empfaenger
         {
         server.sendeString(inputString);
         }   
+        */
     }
+    
     
     public void empfangeInt(int var){}
     

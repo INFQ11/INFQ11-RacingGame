@@ -8,7 +8,6 @@ public abstract class Bildschirm
     
      public static Bildschirm getBildschirm(BildschirmType bildschirm)
     {
-        
         switch (bildschirm)
         {
             case STARTBILDSCHIRM: return new Startbildschirm();

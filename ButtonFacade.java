@@ -1,5 +1,4 @@
 
-
 public class ButtonFacade
 {
     private static myGame game;
@@ -34,7 +33,7 @@ public class ButtonFacade
     {
         for (Button b : ButtonVerwaltung.getInstance().getButtons())
         {
-            if (b!= null) b.setActive(true);
+            if (b!= null) b.setActive(false);
         }
     }
     

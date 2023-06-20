@@ -90,6 +90,8 @@ public class Auto extends Bild
 
     angle = angle % 360; //Angle Range Control
     
+    //myGame.getInstance().getClient().sendeString("A " + getX() + " " + getY() + " " + angle);
+    
     this.bewegen(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
     
     myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
@@ -220,5 +222,15 @@ public class Auto extends Bild
 
     }
 
+    }
+    
+    public void setRotation(float rot)
+    {
+        this.angle = rot;
+    }
+    
+    public float getRotation()
+    {
+        return angle;
     }
 }

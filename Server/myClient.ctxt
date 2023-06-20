@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=myClient
+comment1.params=ip\ port\ prefix
+comment1.target=myClient(java.lang.String,\ int,\ java.lang.String)
+comment2.params=inputInteger
+comment2.target=void\ empfangeInt(int)
+comment3.params=inputByte
+comment3.target=void\ empfangeByte(byte)
+comment4.params=xStr\ yStr
+comment4.target=ea.Punkt\ parsePoint(java.lang.String,\ java.lang.String)
+comment4.text=\r\n\ \ \ \ @Override\r\n\ \ \ \ public\ void\ empfangeString(String\ inputString)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ if\ (\!\r\n\ \ \ \ \ \ \ \ \ inputString.startsWith(myGame.getInstance().getPrefix()))\r\n\ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ String\ []\ tokens\ \=\ inputString.trim().split("\\\\s+");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ Punkt\ position\ \=\ parsePoint(tokens[1],\ tokens[2]);\r\n\ \ \ \ \ \ \ \ \ \ \ \ float\ rotation\ \=\ parseFloat(tokens[3]);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ FahrerFacade.getFahrer2().moveCar(position,\ rotation);\r\n\ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n
+comment5.params=numStr
+comment5.target=float\ parseFloat(java.lang.String)
+comment6.params=
+comment6.target=int\ getPort()
+comment7.params=
+comment7.target=int\ getFreePort()
+numComments=8

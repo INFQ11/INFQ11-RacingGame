@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=myServer
+comment1.params=port
+comment1.target=myServer(int)
+comment2.params=
+comment2.target=ea.Server\ getServer()
+comment3.params=
+comment3.target=void\ verbindungBeendet()
+comment4.params=inputString
+comment4.target=void\ empfangeString(java.lang.String)
+comment5.params=var
+comment5.target=void\ empfangeInt(int)
+comment6.params=var
+comment6.target=void\ empfangeBoolean(boolean)
+comment7.params=var
+comment7.target=void\ empfangeChar(char)
+comment8.params=var
+comment8.target=void\ empfangeByte(byte)
+comment9.params=var
+comment9.target=void\ empfangeDouble(double)
+numComments=10

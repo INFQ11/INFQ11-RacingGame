@@ -18,6 +18,6 @@ public class MehrspielerButton extends Button
      myGame.getInstance().gamemodeSetzen(GamemodeType.MEHRSPIELER);
      myGame.getInstance().bildschirmWechseln(BildschirmType.AUSWAHLBILDSCHIRM_LEHRER);
      
-     myGame.getInstance().multiplayerInstantiation();
+     //myGame.getInstance().multiplayerInstantiation();
  }
 }

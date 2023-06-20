@@ -52,4 +52,15 @@ public class Fahrer
     {
         this.auto.tick();
     }
+    
+    public void moveCar (Punkt p, float rotation)
+    {
+        this.auto.bewegen(p.x, p.y);
+        this.auto.setRotation(rotation);
+    }
+    
+    public Auto getCar()
+    {
+        return auto;
+    }
 }
