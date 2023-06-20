@@ -15,17 +15,19 @@ public class ButtonFacade
     
     public static Button getButton(ButtonType buttonType)
     {
-        return switch (buttonType)
+       switch (buttonType)
         {
-            case START -> buttons[0];
-            case EINSTELLUNGEN -> buttons[1];
-            case OK -> buttons[2];
-            case PFEILVOR -> buttons[3];
-            case PFEILZURÜCK -> buttons[4];
-            case ZURÜCK -> buttons[5];
-            case MEHRSPIELER -> buttons[6];
-            case EINSPIELER -> buttons[7];
-        };
+            case START: return buttons[0];
+            case EINSTELLUNGEN: return buttons[1];
+            case OK: return buttons[2];
+            case PFEILVOR: return buttons[3];
+            case PFEILZURÜCK: return buttons[4];
+            case ZURÜCK: return buttons[5];
+            case MEHRSPIELER: return buttons[6];
+            case EINSPIELER: return buttons[7];
+            
+            default: return null;
+        }
     }
     
     public static void resetButtons()

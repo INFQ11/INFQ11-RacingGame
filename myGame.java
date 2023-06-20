@@ -9,6 +9,8 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
 {
     private static myGame instance;
     
+    private myClient client;
+    
     private Maus maus;
     
     private Bildschirm currentBildschirm;
