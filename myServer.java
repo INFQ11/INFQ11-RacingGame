@@ -11,6 +11,11 @@ public class myServer implements Empfaenger
         
         server.globalenEmpfaengerSetzen(this);
     }
+    
+    public Server getServer()
+    {
+        return this.server;
+    }
 
     // Empfangen-Methoden
     

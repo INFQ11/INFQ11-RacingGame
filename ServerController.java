@@ -20,22 +20,24 @@ public class ServerController
         
         do {
             input = sc.next();
-        }while (!input.equals("END"));
+        } while (!input.equals("END"));
         
+        getInstance().standardServer.getServer().beendeVerbindung();
     }
     
     private ServerController()
     {
         standardServer = new myServer(STANDARD_PORT);
         
-        freePorts = new HashSet<>(){
-        {
+        freePorts = new HashSet<>();
+        
         for (int i = 7001; i <= 7010; i++)
         {
-           add(i); 
+           freePorts.add(i); 
         }
-        }
-        };
+        
+        
+        serverMap = new HashMap<>();
     }
     
     public static ServerController getInstance()
@@ -55,6 +57,7 @@ public class ServerController
             
         serverMap.put(freePort, new myServer(freePort));
         freePorts.remove(freePort);
+        System.out.println("Recieved port" + freePort);
         return freePort;
     }
 }
