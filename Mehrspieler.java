@@ -6,11 +6,21 @@ public class Mehrspieler extends Bildschirm
 {
     public Mehrspieler()
     {
-        Bild b = new Bild(0, 0, 100, "C://Users//ksilb//OneDrive//Dokumente//Schule//Q11//Strecke (1).png");
-        wurzel.add(b);
+        Bild bild = new Bild(0,0,100,TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
+        wurzel.add(bild);
         
-        Fahrer fahrer1 = new Fahrer(TexturManager.BREITE/2,TexturManager.HOEHE/2, 100, "Fahrer 1", LEHRER.GUST, false);
-        Fahrer fahrer2 = new Fahrer(TexturManager.BREITE/2+200,TexturManager.HOEHE/2+200, 100, "Fahrer 2", LEHRER.GUST, true);
+        LEHRER lehrer = myGame.getInstance().getLehrer();
+        Fahrer fahrer1 = new Fahrer(TexturManager.BREITE/2,TexturManager.HOEHE/2, 100, "Fahrer 1", lehrer, false);
+
+        if (myGame.getInstance().getClient() != null)
+        {
+        // Send to server
+        myGame.getInstance().getClient().sendeString(myGame.getInstance().getPrefix() + " " + myGame.SEND_FAHRER + " " + lehrer.toString());
+
+        while(FahrerFacade.getFahrer2() == null) {}
+        }
+
+        Fahrer fahrer2 = new Fahrer(TexturManager.BREITE/2, TexturManager.HOEHE/2, 100, "Fahrer 2", lehrer, true);
         
         wurzel.add(FahrerFacade.getRaum());
 

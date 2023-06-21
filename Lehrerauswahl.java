@@ -44,6 +44,8 @@ public class Lehrerauswahl
         currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
         
+        myGame.getInstance().setLehrer(lehrer[index]);
+        
         wurzel.add(currentIcon);
         wurzel.add(currentName);
     }
@@ -57,6 +59,8 @@ public class Lehrerauswahl
     
         currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
+        
+        myGame.getInstance().setLehrer(lehrer[index]);
         
         wurzel.add(currentIcon);
         wurzel.add(currentName);

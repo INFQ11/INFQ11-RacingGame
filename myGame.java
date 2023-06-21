@@ -15,8 +15,10 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     public static final String IP = "192.168.220.170";
     public static final String REQUEST_FREE_PORT = "RFP";
     private String prefix = "X";
-    
-    
+    public static final String REQUEST_FAHRER = "RF";
+    public static final String SEND_FAHRER = "SF";
+
+    private LEHRER lehrer;
     private Maus maus;
     
     private Bildschirm currentBildschirm;
@@ -159,7 +161,10 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     public Kamera getCam() {return cam;}
     
-    
+    public LEHRER getLehrer() {return lehrer;}
+
+    public void setLehrer(LEHRER lehrer) { this.lehrer = lehrer;}
+
     public String getPrefix()
     {
         return prefix;

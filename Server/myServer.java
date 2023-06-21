@@ -8,6 +8,10 @@ public class myServer implements Empfaenger
 {
     private Server server;
     public static final String REQUEST_FREE_PORT = "RFP";
+    public static final String REQUEST_FAHRER = "RF";
+    public static final String SEND_FAHRER = "SF";
+    private String lehrerA;
+    private String lehrerB;
     
     public myServer(int port)
     {
@@ -39,7 +43,32 @@ public class myServer implements Empfaenger
         }
         else
         {
+            
+        String [] tokens = inputString.trim().split("\\s+");
+        
+        if (tokens[1].equals(myServer.SEND_FAHRER))
+        {
+            if (tokens[0].equals("A"))
+            {
+                lehrerA = tokens[1];
+            }
+            else lehrerB = tokens[1];
+        }
+        else
+        {
+            if (tokens[1].equals(myServer.REQUEST_FAHRER))
+            {
+                if (tokens[0].equals("A"))
+                {
+                     server.sendeString("B " + myServer.REQUEST_FAHRER + " " + lehrerB);
+                }
+                else server.sendeString("A " + myServer.REQUEST_FAHRER + " " + lehrerA);
+            }
+            else
+            {
         server.sendeString(inputString);
+        }
+        }
         }   
     }
     
