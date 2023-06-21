@@ -32,7 +32,6 @@ public class FahrerFacade implements Runnable
         {
             fahrer1 = fahrer;
             wurzel.add(fahrer1.getRaum());
-            new Thread(new FahrerFacade()).start();
         }
         else {
             fahrer2 = fahrer;
@@ -41,6 +40,10 @@ public class FahrerFacade implements Runnable
         }
     }
     
+    public static void startServerPings()
+    {
+        new Thread(new FahrerFacade()).start();
+    }
     
     // TODO: fahrer wechseln
     

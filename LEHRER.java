@@ -5,12 +5,12 @@ public enum LEHRER
     EHRENTHALER     ("Florian Ehrenthaler",     2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Ehrenthaler.png", TexturManager.DATEIPFAD + "StructureIcon.png",       TexturManager.DATEIPFAD + "Ehrenthaler.png"),
     ADAM            ("Franz Adam",              2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Adam.png", TexturManager.DATEIPFAD + "StructureIcon.png",              TexturManager.DATEIPFAD + "Adam.png"),
     GUST            ("Verena Gust",             2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Gust.png", TexturManager.DATEIPFAD + "StructureIcon.png",              TexturManager.DATEIPFAD + "Gust.png"),
-    SCHMELMER       ("Anton Schmelmer",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureIcon.png",           TexturManager.DATEIPFAD + "Schmelmer.png"),
+    SCHMELMER       ("Anton Schmelmer",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Schmelmer.png", TexturManager.DATEIPFAD + "StructureIcon.png",         TexturManager.DATEIPFAD + "Schmelmer.png"),
     STUFFER         ("Manuel Stuffer",          2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Stuffer.png", TexturManager.DATEIPFAD + "StructureIcon.png",           TexturManager.DATEIPFAD + "Stuffer.png"),
     PLEYER          ("Christine Pleyer",        2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Pleyer.png",  TexturManager.DATEIPFAD + "StructureIcon.png",           TexturManager.DATEIPFAD + "Pleyer.png"),
     LOISTL          ("Florian Loistl",          2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Loistl.png", TexturManager.DATEIPFAD + "StructureIcon.png",            TexturManager.DATEIPFAD + "Loistl.png"),
     SAUER           ("Daniel Sauer",            2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Sauer.png", TexturManager.DATEIPFAD + "StructureIcon.png",             TexturManager.DATEIPFAD + "Sauer.png"),
-    TREMMEL         ("Andreas Tremmel",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "StructureCar.png", TexturManager.DATEIPFAD + "StructureIcon.png",           TexturManager.DATEIPFAD + "Tremmel.png"),
+    TREMMEL         ("Andreas Tremmel",         2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Tremmel.png", TexturManager.DATEIPFAD + "StructureIcon.png",           TexturManager.DATEIPFAD + "Tremmel.png"),
     WECKER          ("Stefan Wecker",           2f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Wecker.png", TexturManager.DATEIPFAD + "StructureIcon.png",            TexturManager.DATEIPFAD + "Wecker.png")
     
     

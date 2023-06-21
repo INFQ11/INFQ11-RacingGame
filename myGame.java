@@ -159,7 +159,6 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     public Kamera getCam() {return cam;}
     
-    
     public String getPrefix()
     {
         return prefix;
