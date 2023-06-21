@@ -1,6 +1,6 @@
 import ea.*;
 
-public class FahrerFacade
+public class FahrerFacade implements Runnable
 {
     private static boolean secondPlayer;
     private static Fahrer fahrer1;
@@ -12,12 +12,27 @@ public class FahrerFacade
         
     }
     
+    @Override
+    public void run()
+    {
+        while (true)
+        {
+            try
+            {
+                Thread.sleep(5);
+            }
+            catch (InterruptedException ie){}
+            myGame.getInstance().getClient().sendeString(myGame.getInstance().getPrefix() + " " + FahrerFacade.getFahrer1().getCar().getX() + " " + FahrerFacade.getFahrer1().getCar().getY() + " " + FahrerFacade.getFahrer1().getCar().getRotation());
+        }
+    }
+    
     public static void addFahrer(Fahrer fahrer)
     {
         if (fahrer1 == null)
         {
             fahrer1 = fahrer;
             wurzel.add(fahrer1.getRaum());
+            new Thread(new FahrerFacade()).start();
         }
         else {
             fahrer2 = fahrer;

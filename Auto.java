@@ -42,7 +42,10 @@ public class Auto extends Bild
         
         this.direction = DIRECTION.NEUTRAL;
         this.secondPlayer = secondPlayer;
+
     }
+    
+    
     
     public void tick()
     {
@@ -90,7 +93,6 @@ public class Auto extends Bild
 
     angle = angle % 360; //Angle Range Control
     
-    //myGame.getInstance().getClient().sendeString("A " + getX() + " " + getY() + " " + angle);
     
     this.bewegen(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
     

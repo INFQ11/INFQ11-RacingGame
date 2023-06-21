@@ -28,7 +28,7 @@ public class myClient extends Client
 
     }
     
-    /*
+    
     @Override
     public void empfangeString(String inputString)
     {
@@ -40,6 +40,7 @@ public class myClient extends Client
             Punkt position = parsePoint(tokens[1], tokens[2]);
             float rotation = parseFloat(tokens[3]);
             
+            if (FahrerFacade.getFahrer2() != null)
             FahrerFacade.getFahrer2().moveCar(position, rotation);
          }
          else
@@ -47,7 +48,7 @@ public class myClient extends Client
              
          }
         }
-         */
+         
     
     
     public Punkt parsePoint(String xStr, String yStr)

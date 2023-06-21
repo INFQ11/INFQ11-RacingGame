@@ -33,7 +33,6 @@ public class myServer implements Empfaenger
     {
         System.out.println("Server recieved String: " + inputString);
         
-        /*
         if (inputString.equals(myServer.REQUEST_FREE_PORT))
         {
             server.sendeInt(ServerController.getInstance().getFreePort());
@@ -42,7 +41,6 @@ public class myServer implements Empfaenger
         {
         server.sendeString(inputString);
         }   
-        */
     }
     
     

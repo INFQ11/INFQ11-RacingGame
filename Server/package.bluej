@@ -1,7 +1,10 @@
 #BlueJ package file
-dependency1.from=ServerController
-dependency1.to=myServer
+dependency1.from=myServer
+dependency1.to=ServerController
 dependency1.type=UsesDependency
+dependency2.from=ServerController
+dependency2.to=myServer
+dependency2.type=UsesDependency
 objectbench.height=166
 objectbench.width=1476
 package.divider.horizontal=0.6
@@ -12,7 +15,7 @@ package.editor.x=0
 package.editor.y=0
 package.frame.height=965
 package.frame.width=1513
-package.numDependencies=1
+package.numDependencies=2
 package.numTargets=2
 package.showExtends=true
 package.showUses=true

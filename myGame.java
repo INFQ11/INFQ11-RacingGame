@@ -9,13 +9,13 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
 {
     private static myGame instance;
     
-    /*
+    
     private myClient client;
-    public static final int STANDARD_PORT = 7000;
-    public static final String IP = "192.168.178.103";
+    public static final int STANDARD_PORT = 7001;
+    public static final String IP = "192.168.220.170";
     public static final String REQUEST_FREE_PORT = "RFP";
     private String prefix = "X";
-    */
+    
     
     private Maus maus;
     
@@ -80,13 +80,13 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         ButtonFacade.instantiateFacade(this);
         BildschirmFacade.instantiateFacade(this);
         
-        bildschirmWechseln(BildschirmType.EINZELSPIELER);
+        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);
     }
     
-    /*
+    
     public void multiplayerInstantiation()
     {
         if (frage("Möchtest du eine neue Multiplayer-Lobby öffnen?"))
@@ -143,7 +143,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         prefix = "B";
         client = new myClient(IP, port, prefix);
     }
-    */
+    
      
     public Maus getMaus() {return maus;}
     
@@ -159,7 +159,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     
     public Kamera getCam() {return cam;}
     
-    /*
+    
     public String getPrefix()
     {
         return prefix;
@@ -169,6 +169,5 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     {
         return client;
     }
-    */
 }      
 

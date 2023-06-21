@@ -11,7 +11,7 @@ public class ServerController
     private HashSet<Integer> freePorts;
     private HashMap<Integer, myServer> serverMap;
     private myServer standardServer;
-    public static final int STANDARD_PORT = 7000;
+    public static final int STANDARD_PORT = 7001;
     
     private static ServerController instance;
     
@@ -34,7 +34,7 @@ public class ServerController
         
         freePorts = new HashSet<>();
         
-        for (int i = 7001; i <= 7010; i++)
+        for (int i = 7002; i <= 7010; i++)
         {
            freePorts.add(i); 
         }

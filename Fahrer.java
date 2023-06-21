@@ -55,7 +55,7 @@ public class Fahrer
     
     public void moveCar (Punkt p, float rotation)
     {
-        this.auto.bewegen(p.x, p.y);
+        this.auto.positionSetzen(p);
         this.auto.setRotation(rotation);
     }
     
