@@ -34,8 +34,13 @@ public class myClient extends Client
     {
          if (!
          inputString.startsWith(myGame.getInstance().getPrefix()))
-         {
+         { 
             String [] tokens = inputString.trim().split("\\s+");
+            
+            if (tokens[1].equals(myGame.REQUEST_FAHRER))
+            {
+                FahrerFacade.setFahrer2(new Fahrer(TexturManager.BREITE/2,TexturManager.HOEHE/2, 10, "Fahrer 2", LEHRER.valueOf(tokens[2]), true));
+            }
             
             Punkt position = parsePoint(tokens[1], tokens[2]);
             float rotation = parseFloat(tokens[3]);
