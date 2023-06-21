@@ -15,5 +15,9 @@ public class ButtonSammlung
         PfeilVorButton PVB = new PfeilVorButton(100,0,100,TexturManager.DATEIPFAD + "PfeilVorButton.png");
         
         OKButton okb = new OKButton(600,0,100,TexturManager.DATEIPFAD + "OKButton.png");
+
+        //SmashButton smb = new SmashButton(1600,0,100,TexturManager.DATEIPFAD + "OKButton.png");
+
+        //PassButton pb = new PassButton(1100,0,100,TexturManager.DATEIPFAD + "PfeilVorButton.png");
     }
 }

@@ -24,7 +24,7 @@ public class Einzelspieler extends Bildschirm
         WandHor1.passivMachen();
         wurzel.add(WandHor1);
 
-        Rechteck WandHor2 = new Rechteck(610,720,590,10);
+        Rechteck WandHor2 = new Rechteck(610,720,630,10);
         WandHor2.passivMachen();
         wurzel.add(WandHor2);
 

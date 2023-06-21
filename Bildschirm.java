@@ -15,6 +15,8 @@ public abstract class Bildschirm
             case AUSWAHLBILDSCHIRM_SPIELER: return new Auswahlbildschirm_Spieler();
             
             case AUSWAHLBILDSCHIRM_LEHRER: return new Auswahlbildschirm_Lehrer();
+
+            case AUSWAHLBILDSCHIRM_LEHRER_MEHRSPIELER: return new Auswahlbildschirm_Lehrer_Mehrspieler();
             
             case EINZELSPIELER: return new Einzelspieler();
             
