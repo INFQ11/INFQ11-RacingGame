@@ -85,4 +85,9 @@ public class FahrerFacade implements Runnable
     {
         return wurzel;
     }
+    
+    public static void setFahrer2(Fahrer fahrer)
+    {
+        fahrer2 = fahrer;
+    }
 }
