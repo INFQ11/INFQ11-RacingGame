@@ -80,7 +80,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         ButtonFacade.instantiateFacade(this);
         BildschirmFacade.instantiateFacade(this);
         
-        bildschirmWechseln(BildschirmType.EINZELSPIELER);
+        bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
         
         manager.anmelden(this, 1);
         tastenLosgelassenReagierbarAnmelden(this);

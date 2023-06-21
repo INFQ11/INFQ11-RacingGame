@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class myServer implements Empfaenger
 {
     private Server server;
+    public static final String REQUEST_FREE_PORT = "RFP";
     
     public myServer(int port)
     {
@@ -30,8 +31,10 @@ public class myServer implements Empfaenger
     
     public void empfangeString(String inputString)
     {
+        System.out.println("Server recieved String: " + inputString);
+        
         /*
-        if (inputString.equals(myGame.REQUEST_FREE_PORT))
+        if (inputString.equals(myServer.REQUEST_FREE_PORT))
         {
             server.sendeInt(ServerController.getInstance().getFreePort());
         }
