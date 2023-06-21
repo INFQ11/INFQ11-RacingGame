@@ -10,7 +10,8 @@ public class Einzelspieler extends Bildschirm
         Bild b = new Bild(0, 0, 100, TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
         wurzel.add(b);
         
-        Fahrer fahrer = new Fahrer(960,540,100, "Player 1", LEHRER.GUST, false);
+        LEHRER lehrer = myGame.getInstance().getLehrer();
+        Fahrer fahrer = new Fahrer(960,540,100, "Player 1", lehrer, false);
         wurzel.add(FahrerFacade.getRaum());
 
         
