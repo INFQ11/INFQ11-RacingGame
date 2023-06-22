@@ -11,7 +11,7 @@ public class Einzelspieler extends Bildschirm
         wurzel.add(b);
         
         LEHRER lehrer = myGame.getInstance().getLehrer();
-        Fahrer fahrer = new Fahrer(960,540,100, "Player 1", lehrer, false);
+        new Fahrer(960,540,100, "Player 1", lehrer, false);
         wurzel.add(FahrerFacade.getRaum());
 
         
@@ -59,7 +59,7 @@ public class Einzelspieler extends Bildschirm
         WandVert3.passivMachen();
         wurzel.add(WandVert3);
 
-        Rechteck WandHor9 = new Rechteck(3975,1337,2000,10);
+        Rechteck WandHor9 = new Rechteck(3975,1337,1790,10);
         WandHor9.passivMachen();
         wurzel.add(WandHor9);
 
@@ -71,7 +71,7 @@ public class Einzelspieler extends Bildschirm
         WandVert5.passivMachen();
         wurzel.add(WandVert5);
 
-        Rechteck WandHor10 = new Rechteck(4490,1730,400,10);
+        Rechteck WandHor10 = new Rechteck(4490,1730,200,10);
         WandHor10.passivMachen();
         wurzel.add(WandHor10);
 
@@ -95,7 +95,7 @@ public class Einzelspieler extends Bildschirm
         WandHor14.passivMachen();
         wurzel.add(WandHor14);
 
-        Rechteck WandVert7 = new Rechteck(3525,2430,10,1000);
+        Rechteck WandVert7 = new Rechteck(3525,2430,10,1180);
         WandVert7.passivMachen();
         wurzel.add(WandVert7);
 
@@ -111,20 +111,22 @@ public class Einzelspieler extends Bildschirm
         WallU.passivMachen();
         wurzel.add(WallU);
 
-        Rechteck WallR = new Rechteck(1920*3,0,10,1080*3);
+        Rechteck WallR = new Rechteck(1920*3,0,10,3600);
         WallR.passivMachen();
         wurzel.add(WallR);
 
-        Rechteck WallD = new Rechteck(0,1080*3,1920*3,10);
+        Rechteck WallD = new Rechteck(0,3600,1920*3,10);
         WallD.passivMachen();
         wurzel.add(WallD);
 
-        Rechteck WallL = new Rechteck(0,0,10,1080*3);
+        Rechteck WallL = new Rechteck(0,0,10,3600);
         WallL.passivMachen();
         wurzel.add(WallL);
 
     }
-    
+
+
+
     @Override
     public void tasteReagieren(int tastencode)
     {
