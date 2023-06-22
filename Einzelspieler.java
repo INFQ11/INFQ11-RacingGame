@@ -4,9 +4,12 @@ import ea.*;
 
 public class Einzelspieler extends Bildschirm
 {
-    
+
+
     public Einzelspieler()
     {
+
+        
         Bild b = new Bild(0, 0, 100, TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
         wurzel.add(b);
         
@@ -14,7 +17,10 @@ public class Einzelspieler extends Bildschirm
         Fahrer fahrer = new Fahrer(960,540,100, "Player 1", lehrer, false);
         wurzel.add(FahrerFacade.getRaum());
 
-        
+        Countdown c = new Countdown(fahrer.getCar().positionX() ,fahrer.getCar().positionY());
+        wurzel.add(c.getRaum());
+        new Thread(c).start();
+
         Rechteck WandVert1 = new Rechteck(610,560,10,2640);
         WandVert1.passivMachen();
         wurzel.add(WandVert1);
@@ -108,7 +114,8 @@ public class Einzelspieler extends Bildschirm
         wurzel.add(WandHor16);
 
     }
-    
+
+
     @Override
     public void tasteReagieren(int tastencode)
     {
