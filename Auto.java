@@ -43,6 +43,8 @@ public class Auto extends Bild
         this.direction = DIRECTION.NEUTRAL;
         this.secondPlayer = secondPlayer;
 
+        if (!secondPlayer)
+        myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
     }
     
     
