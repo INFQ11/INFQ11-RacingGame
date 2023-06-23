@@ -123,6 +123,10 @@ public class Einzelspieler extends Bildschirm
         WallL.passivMachen();
         wurzel.add(WallL);
 
+        Bild minimap = new Bild(TexturManager.BREITE/5*4,0,20,TexturManager.DATEIPFAD + "Strecke");
+        myGame.getInstance().getStatischeWurzel().add(minimap);
+
+
     }
 
 

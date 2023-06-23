@@ -174,5 +174,10 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     {
         return client;
     }
+
+    public Knoten getStatischeWurzel()
+    {
+        return statischeWurzel;
+    }
 }      
 

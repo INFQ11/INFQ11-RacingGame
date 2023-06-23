@@ -101,7 +101,8 @@ public class Auto extends Bild
 
     if (!secondPlayer)
     myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
-    
+
+
     this.drehenAbsolut(angle);
     }
 
@@ -164,7 +165,7 @@ public class Auto extends Bild
 
     ee = ee.substring(2, ee.length());
 
-    if (ee.contains("b217b4b0"))
+    if (ee.contains("b217b484"))
     {
     accbool = false;
     direction = DIRECTION.NEUTRAL;
