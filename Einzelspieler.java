@@ -9,7 +9,7 @@ public class Einzelspieler extends Bildschirm
     public Einzelspieler()
     {
 
-        
+
         Bild b = new Bild(0, 0, 100, TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
         wurzel.add(b);
         
@@ -29,7 +29,7 @@ public class Einzelspieler extends Bildschirm
         WandHor1.passivMachen();
         wurzel.add(WandHor1);
 
-        Rechteck WandHor2 = new Rechteck(610,720,590,10);
+        Rechteck WandHor2 = new Rechteck(610,720,630,10);
         WandHor2.passivMachen();
         wurzel.add(WandHor2);
 
@@ -65,7 +65,7 @@ public class Einzelspieler extends Bildschirm
         WandVert3.passivMachen();
         wurzel.add(WandVert3);
 
-        Rechteck WandHor9 = new Rechteck(3975,1337,2000,10);
+        Rechteck WandHor9 = new Rechteck(3975,1337,1790,10);
         WandHor9.passivMachen();
         wurzel.add(WandHor9);
 
@@ -77,7 +77,7 @@ public class Einzelspieler extends Bildschirm
         WandVert5.passivMachen();
         wurzel.add(WandVert5);
 
-        Rechteck WandHor10 = new Rechteck(4490,1730,400,10);
+        Rechteck WandHor10 = new Rechteck(4490,1730,200,10);
         WandHor10.passivMachen();
         wurzel.add(WandHor10);
 
@@ -101,7 +101,7 @@ public class Einzelspieler extends Bildschirm
         WandHor14.passivMachen();
         wurzel.add(WandHor14);
 
-        Rechteck WandVert7 = new Rechteck(3525,2410,10,2000);
+        Rechteck WandVert7 = new Rechteck(3525,2430,10,1180);
         WandVert7.passivMachen();
         wurzel.add(WandVert7);
 
@@ -113,7 +113,24 @@ public class Einzelspieler extends Bildschirm
         WandHor16.passivMachen();
         wurzel.add(WandHor16);
 
+        Rechteck WallU = new Rechteck(0,0,1920*3,10);
+        WallU.passivMachen();
+        wurzel.add(WallU);
+
+        Rechteck WallR = new Rechteck(1920*3,0,10,3600);
+        WallR.passivMachen();
+        wurzel.add(WallR);
+
+        Rechteck WallD = new Rechteck(0,3600,1920*3,10);
+        WallD.passivMachen();
+        wurzel.add(WallD);
+
+        Rechteck WallL = new Rechteck(0,0,10,3600);
+        WallL.passivMachen();
+        wurzel.add(WallL);
+
     }
+
 
 
     @Override

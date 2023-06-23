@@ -93,21 +93,19 @@ public class Auto extends Bild
 
     }
 
-    
-    
-    
     if (angle < 0)
-    angle = 360 - angle;
+        angle = 360 - angle;
     else if (angle > 360)
-    angle %= 360;
+    angle %= 360; //Angle Range Control
+    
     
     this.verschieben(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
-    
-    if (!secondPlayer) {
-        myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
-        SteuerungFacade.getStoppuhr().positionSetzen(myGame.getInstance().getCam().getX() + 30, myGame.getInstance().getCam().getY() + 30);
-    }
-    
+
+        if (!secondPlayer) {
+            myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
+            SteuerungFacade.getStoppuhr().positionSetzen(myGame.getInstance().getCam().getX() + 30, myGame.getInstance().getCam().getY() + 30);
+        }
+
     this.drehenAbsolut(angle);
     }
 
