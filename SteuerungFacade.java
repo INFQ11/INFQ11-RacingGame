@@ -22,6 +22,7 @@ public class SteuerungFacade
     public static void startTicker()
     {
         stoppuhr = new Stoppuhr(myGame.getInstance().getCam().getX() + 20, myGame.getInstance().getCam().getY() + 20);
+        myGame.getInstance().getStatischeWurzel().add(stoppuhr.getRaum());
         stoppuhr.start();
         ticking = true;
     }

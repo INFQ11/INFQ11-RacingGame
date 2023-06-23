@@ -2,6 +2,8 @@
 
 import ea.*;
 
+import java.awt.*;
+
 public class Auto extends Bild
 {
     private DIRECTION direction;
@@ -103,6 +105,14 @@ public class Auto extends Bild
 
     if (!secondPlayer)
     myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
+
+
+        Kreis miniSpieler = new Kreis(this.getX() / TexturManager.BREITE + TexturManager.BREITE / 5 * 3, this.getY() / TexturManager.HOEHE + TexturManager.HOEHE / 5 * 3, 5);
+        miniSpieler.farbeSetzen(Color.RED);
+        myGame.getInstance().getStatischeWurzel().add(miniSpieler);
+
+
+
 
 
     this.drehenAbsolut(angle);
