@@ -10,7 +10,7 @@ public class Mehrspieler extends Bildschirm
         wurzel.add(bild);
         
         LEHRER lehrer = myGame.getInstance().getLehrer();
-        Fahrer fahrer1 = new Fahrer(TexturManager.BREITE/2,TexturManager.HOEHE/2, 100, "Fahrer 1", lehrer, false);
+        Fahrer fahrer1 = new Fahrer((int)TexturManager.BREITE/2,(int)TexturManager.HOEHE/2, 100, "Fahrer 1", lehrer, false);
 
         if (myGame.getInstance().getClient() != null)
         {
@@ -20,7 +20,7 @@ public class Mehrspieler extends Bildschirm
         while(FahrerFacade.getFahrer2() == null) {}
         }
 
-        Fahrer fahrer2 = new Fahrer(TexturManager.BREITE/2, TexturManager.HOEHE/2, 100, "Fahrer 2", lehrer, true);
+        Fahrer fahrer2 = new Fahrer((int)TexturManager.BREITE/2, (int)TexturManager.HOEHE / 2, 100, "Fahrer 2", lehrer, true);
         
         wurzel.add(FahrerFacade.getRaum());
 

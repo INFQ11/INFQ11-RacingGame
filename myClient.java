@@ -39,7 +39,7 @@ public class myClient extends Client
             
             if (tokens[1].equals(myGame.REQUEST_FAHRER))
             {
-                FahrerFacade.setFahrer2(new Fahrer(TexturManager.BREITE/2,TexturManager.HOEHE/2, 10, "Fahrer 2", LEHRER.valueOf(tokens[2]), true));
+                FahrerFacade.setFahrer2(new Fahrer((int)TexturManager.BREITE/2,(int)TexturManager.HOEHE/2, 10, "Fahrer 2", LEHRER.valueOf(tokens[2]), true));
             }
             
             Punkt position = parsePoint(tokens[1], tokens[2]);
