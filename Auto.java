@@ -107,9 +107,9 @@ public class Auto extends Bild
     myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
 
 
-        Kreis miniSpieler = new Kreis(this.getX() / TexturManager.BREITE + TexturManager.BREITE / 5 * 3, this.getY() / TexturManager.HOEHE + TexturManager.HOEHE / 5 * 3, 5);
-        miniSpieler.farbeSetzen(Color.RED);
-        myGame.getInstance().getStatischeWurzel().add(miniSpieler);
+        //Kreis miniSpieler = new Kreis(this.getX() / TexturManager.BREITE + TexturManager.BREITE / 10 * 7, this.getY() / TexturManager.HOEHE + TexturManager.HOEHE / 10 * 7, 5);
+        //miniSpieler.farbeSetzen(Color.RED);
+        //myGame.getInstance().getStatischeWurzel().add(miniSpieler);
 
 
 

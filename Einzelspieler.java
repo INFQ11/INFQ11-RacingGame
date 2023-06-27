@@ -130,8 +130,8 @@ public class Einzelspieler extends Bildschirm
         wurzel.add(WallL);
 
 
-        Bild minimap = new Bild(TexturManager.BREITE/5*3,TexturManager.HOEHE / 5 * 3,2,TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
-        myGame.getInstance().getStatischeWurzel().add(minimap);
+        //Bild minimap = new Bild(TexturManager.BREITE/5*3,TexturManager.HOEHE / 5 * 3,2,TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
+        //myGame.getInstance().getStatischeWurzel().add(minimap);
 
 
 
