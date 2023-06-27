@@ -8,7 +8,7 @@ public class Startbildschirm extends Bildschirm
 {
     public Startbildschirm()
     {
-        Bild bild = new Bild(0,0,67,TexturManager.DATEIPFAD + "Startbildschirm.png");
+        Bild bild = new Bild(0,0,100,TexturManager.DATEIPFAD + "Startbildschirm.png");
         wurzel.add(bild);
         
         ButtonFacade.getButton(ButtonType.START).setActive(true);

@@ -75,7 +75,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     private myGame()
     {
         
-        super(TexturManager.BREITE, TexturManager.HOEHE);
+        super((int)TexturManager.BREITE,(int)TexturManager.HOEHE);
         rechenintensiveArbeitSetzen(true);
         maus = new Maus(0);
 

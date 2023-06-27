@@ -10,7 +10,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
     
     public Auswahlbildschirm_Lehrer()
     {
-        Bild background = new Bild(0,0, 67,TexturManager.DATEIPFAD + "Einzelspieler.png");
+        Bild background = new Bild(0,0,100,TexturManager.DATEIPFAD + "Einzelspieler.png");
         wurzel.add(background);
         
         ButtonFacade.getButton(ButtonType.OK).setActive(true);
