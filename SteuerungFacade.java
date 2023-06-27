@@ -21,17 +21,19 @@ public class SteuerungFacade
     
     public static void startTicker()
     {
-        stoppuhr = new Stoppuhr(myGame.getInstance().getCam().getX() + 20, myGame.getInstance().getCam().getY() + 20);
+        stoppuhr = new Stoppuhr(50,0);
         myGame.getInstance().getStatischeWurzel().add(stoppuhr.getRaum());
         stoppuhr.start();
         ticking = true;
     }
+    
     public static void stopTicker() {
         ticking = false;
         stoppuhr.stop();
     }
 
     private static Stoppuhr stoppuhr;
+    
     public static Stoppuhr getStoppuhr()
     {
         return stoppuhr;

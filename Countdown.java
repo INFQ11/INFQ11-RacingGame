@@ -1,10 +1,15 @@
 import ea.*;
+import java.awt.*;
 
 public class Countdown extends Textanzeige
 {
 public Countdown(int x, int y)
 {
         super(x,y, 400, "5", 5, 1);
+        background = new Rechteck(0,0,1920, 1080);
+        background.farbeSetzen(Color.BLACK);
+        wurzel.add(background);
+        wurzel.add(this);
         leuchtetSetzen(true);
 }
     
@@ -20,7 +25,6 @@ public void run()
     currentNumber -= 1;
     setzeInhalt("" + (int)currentNumber);
     }
-    background.sichtbarSetzen(false);
     setzeGroesse(200);
 
     setzeInhalt("START");
@@ -31,9 +35,9 @@ public void run()
     catch (InterruptedException ie){}
 
     sichtbarSetzen(false);
-
+    background.sichtbarSetzen(false);
+    
     SteuerungFacade.startTicker();
-    myGame.getInstance().getCurrentBildschirm().wurzel.add(SteuerungFacade.getStoppuhr().getRaum());
 }
 }
 

@@ -64,5 +64,8 @@ public class Fahrer
         return auto;
     }
 
-
+    public String toString()
+    {
+        return name + " mit Auto: " + lehrer.toString();
+    }
 }

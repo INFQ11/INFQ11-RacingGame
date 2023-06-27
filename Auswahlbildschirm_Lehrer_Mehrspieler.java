@@ -16,14 +16,8 @@ public class Auswahlbildschirm_Lehrer_Mehrspieler extends Bildschirm
         ButtonFacade.getButton(ButtonType.OK).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.OK));
 
-        ButtonFacade.getButton(ButtonType.SMASH).setActive(true);
-        wurzel.add(ButtonFacade.getButton(ButtonType.SMASH));
-
         ButtonFacade.getButton(ButtonType.PFEILVOR).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.PFEILVOR));
-
-        ButtonFacade.getButton(ButtonType.PASS).setActive(true);
-        wurzel.add(ButtonFacade.getButton(ButtonType.PASS));
 
         lehrerauswahl = new Lehrerauswahl(500,400,650,400);
         wurzel.add(lehrerauswahl.getRaum());

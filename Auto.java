@@ -252,4 +252,5 @@ public class Auto extends Bild
     {
         return angle;
     }
+    
 }

@@ -1,5 +1,6 @@
 import ea.*;
 import java.lang.Math.*;
+import java.awt.*;
 
 import java.util.ArrayList;
 
@@ -8,12 +9,15 @@ public class Stoppuhr extends Textanzeige {
 
     private ArrayList<Double> times = new ArrayList<>();
     private double result;
-
-    private Knoten wurzel = new Knoten();
-    public Stoppuhr(int x, int y) {
+    
+    public Stoppuhr(float x, float y) {
         super(x, y, 70, "0", 0, 1);
         result = -1.0;
-        background = new Rechteck(x + 30, y + 30, getBreite() + 300, getHoehe());
+        background = new Rechteck(0,0,500,170);
+        Text t = new Text(15,100,25, FahrerFacade.getCurrentFahrer().toString());
+        t.setzeFarbe(Color.BLACK);
+        wurzel.add(background);
+        wurzel.add(t);
         wurzel.add(this);
     }
 
@@ -27,7 +31,7 @@ public class Stoppuhr extends Textanzeige {
             } catch (InterruptedException e) {}
 
             currentNumber += 0.001;
-
+            
             setzeInhalt("" +  Math.round(currentNumber*1000.0)/1000.0);
         }
 
@@ -56,6 +60,4 @@ public class Stoppuhr extends Textanzeige {
     {
         return this.times;
     }
-
-
 }

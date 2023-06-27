@@ -5,6 +5,7 @@ public class FahrerFacade implements Runnable
     private static boolean secondPlayer;
     private static Fahrer fahrer1;
     private static Fahrer fahrer2;
+    private static Fahrer currentFahrer;
     private static Knoten wurzel = new Knoten();
     
     public static void instantiateFacade(myGame game)
@@ -31,6 +32,7 @@ public class FahrerFacade implements Runnable
         if (fahrer1 == null)
         {
             fahrer1 = fahrer;
+            currentFahrer = fahrer1;
             wurzel.add(fahrer1.getRaum());
         }
         else {
@@ -89,5 +91,10 @@ public class FahrerFacade implements Runnable
     public static void setFahrer2(Fahrer fahrer)
     {
         fahrer2 = fahrer;
+    }
+    
+     public static Fahrer getCurrentFahrer()
+    {
+        return fahrer1;
     }
 }

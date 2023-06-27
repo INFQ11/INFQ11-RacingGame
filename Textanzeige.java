@@ -8,20 +8,19 @@ public abstract class Textanzeige extends Text implements Runnable
     protected double currentNumber;
 
     protected Rechteck background;
-    private Knoten wurzel = new Knoten();
+    protected Knoten wurzel = new Knoten();
     
-    public Textanzeige(int x , int y, int schriftGroesse, String inhalt, double currentNumber, double adjNumber)
+    public Textanzeige(float x , float y, int schriftGroesse, String inhalt, double currentNumber, double adjNumber)
     {
-        super(x,y, schriftGroesse, inhalt);
+        super(inhalt, x,y,schriftGroesse);
         setzeFarbe(Color.RED);
         setzeSchriftart(3);
-        setX(x - getBreite()/2);
-        setY(y - getHoehe()/2);
+
         this.adjNumber = adjNumber;
         this.currentNumber = currentNumber;
-        background = new Rechteck(getX(), getY(), getBreite() + 30, getHoehe());
-        wurzel.add(background);
-        wurzel.add(this);
+
+        //wurzel.add(this);
+        this.positionSetzen(x,y);
     }
     
     public abstract void run();

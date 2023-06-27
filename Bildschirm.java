@@ -33,5 +33,10 @@ public abstract class Bildschirm
     
     public Raum getRaum(){return wurzel;}
     
+    public void initialize()
+    {
+        
+    }
+    
     public abstract void tasteReagieren(int tastencode);
 }

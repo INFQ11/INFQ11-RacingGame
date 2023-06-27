@@ -24,8 +24,6 @@ public class ButtonFacade
             case ZURÜCK: return buttons[5];
             case MEHRSPIELER: return buttons[6];
             case EINSPIELER: return buttons[7];
-            case SMASH: return buttons[8];
-            case PASS: return buttons[9];
             default: return null;
         }
     }

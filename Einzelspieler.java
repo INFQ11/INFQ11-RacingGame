@@ -4,12 +4,8 @@ import ea.*;
 
 public class Einzelspieler extends Bildschirm
 {
-
-
     public Einzelspieler()
     {
-
-
         Bild b = new Bild(0, 0, 100, TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
         wurzel.add(b);
         
@@ -17,9 +13,7 @@ public class Einzelspieler extends Bildschirm
         Fahrer fahrer = new Fahrer(960,540,100, "Player 1", lehrer, false);
         wurzel.add(FahrerFacade.getRaum());
 
-        Countdown c = new Countdown(fahrer.getCar().positionX() ,fahrer.getCar().positionY());
-        wurzel.add(c.getRaum());
-        new Thread(c).start();
+        
 
         Rechteck WandVert1 = new Rechteck(610,560,10,2640);
         WandVert1.passivMachen();
@@ -128,16 +122,11 @@ public class Einzelspieler extends Bildschirm
         Rechteck WallL = new Rechteck(0,0,10,3600);
         WallL.passivMachen();
         wurzel.add(WallL);
-
-
-        //Bild minimap = new Bild(TexturManager.BREITE/5*3,TexturManager.HOEHE / 5 * 3,2,TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
-        //myGame.getInstance().getStatischeWurzel().add(minimap);
-
-
-
-
+        
+        Countdown c = new Countdown(fahrer.getCar().positionX() ,fahrer.getCar().positionY());
+        wurzel.add(c.getRaum());
+        new Thread(c).start();
     }
-
 
 
     @Override
