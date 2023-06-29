@@ -75,7 +75,7 @@ public class Einzelspieler extends Bildschirm
         WandHor10.passivMachen();
         wurzel.add(WandHor10);
 
-        Rechteck WandHor11 = new Rechteck(620,2280,4500,10);
+        Rechteck WandHor11 = new Rechteck(620,2280,4540,10);
         WandHor11.passivMachen();
         wurzel.add(WandHor11);
 
@@ -106,6 +106,39 @@ public class Einzelspieler extends Bildschirm
         Rechteck WandHor16 = new Rechteck(610,3220,2590,10);
         WandHor16.passivMachen();
         wurzel.add(WandHor16);
+        
+        Rechteck WandVert7b = new Rechteck(3534,2450,31,1160);
+        WandVert7b.passivMachen();
+        
+        Rechteck WandHor11b = new Rechteck(620,2289,2320,31);
+        WandHor11b.passivMachen();
+        
+        Rechteck WandHor11c = new Rechteck(3040,2250,935,31);
+        WandHor11c.passivMachen();
+        
+        Rechteck WandVert6b = new Rechteck(5130,1820,31,1320);
+        WandVert6b.passivMachen();
+        
+        Rechteck WandHor11d = new Rechteck(3975,2289,1150,31);
+        WandHor11d.passivMachen();
+        
+        Rechteck WandHor8b = new Rechteck(2560,509,2665,31);
+        WandHor8b.passivMachen();
+        
+        Rechteck WandVert4b = new Rechteck(5195,500,50,440);
+        WandVert4b.passivMachen();
+        
+        Rechteck WandVert3b = new Rechteck(3459,500,31,1780);
+        WandVert3b.passivMachen();
+        wurzel.add(WandVert3b);
+        
+        Rechteck WandHor9b = new Rechteck(3975,1310,1790,40);
+        WandHor9b.passivMachen();
+        wurzel.add(WandHor9b);
+        
+        Rechteck WandVert5b = new Rechteck(4499,820,31,1150);
+        WandVert5b.passivMachen();
+        wurzel.add(WandVert5b);
 
         Rechteck WallU = new Rechteck(0,0,1920*3,10);
         WallU.passivMachen();
