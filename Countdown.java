@@ -3,9 +3,13 @@ import java.awt.*;
 
 public class Countdown extends Textanzeige
 {
+    private int x;
+    private int y;
 public Countdown(int x, int y)
 {
         super(x,y, 400, "5", 5, 1);
+        this.x = x;
+        this.y = y;
         background = new Rechteck(0,0,3840, 2160);
         background.farbeSetzen(Color.BLACK);
         wurzel.add(background);
@@ -26,7 +30,7 @@ public void run()
     setzeInhalt("" + (int)currentNumber);
     }
     setzeGroesse(200);
-
+    positionSetzen(x-270, y + 100);
     setzeInhalt("START");
     try
     {
