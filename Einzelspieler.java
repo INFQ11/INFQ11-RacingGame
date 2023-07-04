@@ -13,8 +13,6 @@ public class Einzelspieler extends Bildschirm
         Fahrer fahrer = new Fahrer(960,540,100, "Player 1", lehrer, false);
         wurzel.add(FahrerFacade.getRaum());
 
-        
-
         Rechteck WandVert1 = new Rechteck(610,560,10,2640);
         WandVert1.passivMachen();
         wurzel.add(WandVert1);
@@ -155,7 +153,7 @@ public class Einzelspieler extends Bildschirm
         WallL.passivMachen();
         wurzel.add(WallL);
         
-        Countdown c = new Countdown(fahrer.getCar().positionX() ,fahrer.getCar().positionY());
+        Countdown c = new Countdown(1400 ,540);
         wurzel.add(c.getRaum());
         new Thread(c).start();
     }

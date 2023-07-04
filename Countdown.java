@@ -6,7 +6,7 @@ public class Countdown extends Textanzeige
 public Countdown(int x, int y)
 {
         super(x,y, 400, "5", 5, 1);
-        background = new Rechteck(0,0,1920, 1080);
+        background = new Rechteck(0,0,3840, 2160);
         background.farbeSetzen(Color.BLACK);
         wurzel.add(background);
         wurzel.add(this);
