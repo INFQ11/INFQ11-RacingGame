@@ -111,7 +111,7 @@ public class Einzelspieler extends Bildschirm
         Rechteck WandHor11b = new Rechteck(620,2289,2320,31);
         WandHor11b.passivMachen();
         
-        Rechteck WandHor11c = new Rechteck(3040,2250,950,31);
+        Rechteck WandHor11c = new Rechteck(3040,2200,950,81);
         WandHor11c.passivMachen();
         wurzel.add(WandHor11c);
         
@@ -141,17 +141,33 @@ public class Einzelspieler extends Bildschirm
         WallU.passivMachen();
         wurzel.add(WallU);
 
+        Rechteck WallUb = new Rechteck(0,-100,6000,100);
+        WallUb.passivMachen();
+
+
         Rechteck WallR = new Rechteck(1920*3,0,10,3600);
         WallR.passivMachen();
         wurzel.add(WallR);
+
+        Rechteck WallRb = new Rechteck(1920*3,0,110,3600);
+        WallRb.passivMachen();
+
 
         Rechteck WallD = new Rechteck(0,3600,1920*3,10);
         WallD.passivMachen();
         wurzel.add(WallD);
 
+        Rechteck WallDb = new Rechteck(0,3600,6000,110);
+        WallDb.passivMachen();
+
+
         Rechteck WallL = new Rechteck(0,0,10,3600);
         WallL.passivMachen();
         wurzel.add(WallL);
+
+        Rechteck WallLb = new Rechteck(-100,-1000,100,5000);
+        WallLb.passivMachen();
+
         
         Countdown c = new Countdown(1400 ,540);
         wurzel.add(c.getRaum());
