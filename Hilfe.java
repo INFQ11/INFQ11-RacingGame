@@ -4,7 +4,7 @@ import ea.*;
  */
 public class Hilfe extends Bildschirm
 {
-    private String Line[] = new String[15];
+    private String Line[] = new String[25];
     private String completeText = "";
     public void newArray()
     {
@@ -14,15 +14,20 @@ public class Hilfe extends Bildschirm
         Line[3] = "Im Folgenden wird Ihnen eine Instruktion dargeboten, mit welcher Sie es vermögen werden folgendes Spiel in Genuss zu erfahren.";
         Line[4] = "I. Um Ihre Computer-Maus zu mobilisieren, bitten wir Sie hochachtungsvoll auf Ihrem Tastenwerk die Taste „M“ zu erlesen.";
         Line[5] = "II. Anschließend wird Ihnen die Möglichkeit präsentiert, den Startbutton zu betätigen.";
-        Line[6] = "III. Ist diese Hürde genommen, stellt sich Ihnen die Chance dar, die Spieleranzahl mit den Auswahlflächen „Einzelspieler“ und „Mehrspieler“ zu bestimmen.";
-        Line[7] = "IV. Ist dies gemeistert, werden Sie förmlichst dazu aufgefordert, einen Magister zu bestimmen, der Ihr Verlangen stimuliert. Dies können Sie wahrnehmen, indem Sie auf die bereitgestellte Hilfe der „Pass-Taste“ zugreifen. Durch die Betätigung von jener werden Ihnen zahlreiche Auswahlmöglichkeiten vorgeführt unter jenen Sie wählen können. Ist Ihr Votum abgeschlossen wird Ihnen die Gelegenheit bereitgestellt durch Betätigen der „Smash-Taste“ Ihre Wahl zu untermauern.";
-        Line[8] = "V. Darauffolgend sollten Sie visuell wahrnehmen, dass Sie sich mit Ihrem ausgewählten Personenkraftwagen auf einer Startposition einer Rennstrecke wiederfinden. Nach der Realisierung der Situation wird ein Countdown in Ihr Sichtfeld geraten.";
-        Line[9] = "VI. Ist dieser abgelaufen, wird Ihnen die Möglichkeit bereitgestellt durch das Betätigen gewisser Tasten Ihr Renngefährt zu steuern. Um Geschwindigkeit zu erreichen ist es von Nöten die Taste „W“ zu betätigen. Verspüren Sie jedoch den Wunsch Ihr Gefährt zu verlangsamen oder in gegenteilige Richtung zu beschleunigen, legen wir Ihnen nahe „S“ zu betätigen. Möchten Sie die Ausrichtung des Fahrzeugs ändern, können Sie das mit „A“ und „D“ realisieren.";
-        Line[10] = "VII. Während Sie sich im Wettstreit befinden, werden immer wieder herausfordernde Fragen auf Ihrem Bildschirm erscheinen. Kurze Zeit später erscheinen auf der Strecke drei Auswahlmöglichkeiten, mit welchen Sie Ihre Antwort unterstreichen können. Haben Sie die Leistung vollbracht die korrekte Antwort zu bestimmen, erhalten sie einen Zähler. Versagen Sie jedoch bleibt Ihnen diese Leistung verweigert.";
-        Line[11] = "VIII. Nachdem der Rennspaß zu neige gegangen ist, wird der Spieler ausgezeichnet, dessen Zeit und erreichte Punkte in der Gesamtwertung überlegen sind.";
-        Line[12] = "";
-        Line[13] = "";
-        Line[14] = "Der gesamte Informatikkurs wünscht Ihnen VIEL FREUDE beim Exerzieren dieses Produktes.";
+        Line[6] = "III. Ist diese Hürde genommen, stellt sich Ihnen die Chance dar,";
+        Line[7] = "die Spieleranzahl mit den Auswahlflächen „Einzelspieler“ und „Mehrspieler“ zu bestimmen.";
+        Line[8] = "IV. Ist dies gemeistert, werden Sie förmlichst dazu aufgefordert, einen Magister zu bestimmen, der Ihr Verlangen stimuliert.";
+        Line[9] = "Dies können Sie wahrnehmen, indem Sie auf die bereitgestellte Hilfe der „Pass-Taste“ zugreifen.";
+        Line[10] = "Durch die Betätigung von jener werden Ihnen zahlreiche Auswahlmöglichkeiten vorgeführt unter jenen Sie wählen können.";
+        Line[11] = "Ist Ihr Votum abgeschlossen wird Ihnen die Gelegenheit bereitgestellt durch Betätigen der „Smash-Taste“ Ihre Wahl zu untermauern.";
+        Line[12] = "V. Darauffolgend sollten Sie visuell wahrnehmen, dass Sie sich mit Ihrem ausgewählten Personenkraftwagen auf einer Startposition einer Rennstrecke wiederfinden.";
+        Line[13] = "Nach der Realisierung der Situation wird ein Countdown in Ihr Sichtfeld geraten.";
+        Line[14] = "VI. Ist dieser abgelaufen, wird Ihnen die Möglichkeit bereitgestellt durch das Betätigen gewisser Tasten Ihr Renngefährt zu steuern. Um Geschwindigkeit zu erreichen ist es von Nöten die Taste „W“ zu betätigen. Verspüren Sie jedoch den Wunsch Ihr Gefährt zu verlangsamen oder in gegenteilige Richtung zu beschleunigen, legen wir Ihnen nahe „S“ zu betätigen. Möchten Sie die Ausrichtung des Fahrzeugs ändern, können Sie das mit „A“ und „D“ realisieren.";
+        Line[15] = "VII. Während Sie sich im Wettstreit befinden, werden immer wieder herausfordernde Fragen auf Ihrem Bildschirm erscheinen. Kurze Zeit später erscheinen auf der Strecke drei Auswahlmöglichkeiten, mit welchen Sie Ihre Antwort unterstreichen können. Haben Sie die Leistung vollbracht die korrekte Antwort zu bestimmen, erhalten sie einen Zähler. Versagen Sie jedoch bleibt Ihnen diese Leistung verweigert.";
+        Line[16] = "VIII. Nachdem der Rennspaß zu neige gegangen ist, wird der Spieler ausgezeichnet, dessen Zeit und erreichte Punkte in der Gesamtwertung überlegen sind.";
+        Line[17] = "";
+        Line[18] = "";
+        Line[19] = "Der gesamte Informatikkurs wünscht Ihnen VIEL FREUDE beim Exerzieren dieses Produktes.";
         
         
     }
