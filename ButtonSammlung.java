@@ -19,5 +19,7 @@ public class ButtonSammlung
         //SmashButton smb = new SmashButton(1600,0,100,TexturManager.DATEIPFAD + "OKButton.png");
 
         //PassButton pb = new PassButton(1100,0,100,TexturManager.DATEIPFAD + "PfeilVorButton.png");
+        
+        HilfeButton hb = new HilfeButton(1870,10,100,TexturManager.DATEIPFAD + "StartButton.png");
     }
 }

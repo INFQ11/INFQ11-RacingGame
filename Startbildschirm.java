@@ -13,6 +13,9 @@ public class Startbildschirm extends Bildschirm
         
         ButtonFacade.getButton(ButtonType.START).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.START));
+        
+        ButtonFacade.getButton(ButtonType.HILFE).setActive(true);
+        wurzel.add(ButtonFacade.getButton(ButtonType.HILFE));
     }
     
     @Override

@@ -22,6 +22,8 @@ public abstract class Bildschirm
             
             case MEHRSPIELER: return new Mehrspieler();
             
+            case HILFE: return new Hilfe();
+            
             default: throw new UnsupportedOperationException("No verified BildschirmType selected");
         }
     }
