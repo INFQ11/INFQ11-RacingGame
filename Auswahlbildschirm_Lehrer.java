@@ -19,7 +19,7 @@ public class Auswahlbildschirm_Lehrer extends Bildschirm
         ButtonFacade.getButton(ButtonType.PFEILVOR).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.PFEILVOR));
     
-        lehrerauswahl = new Lehrerauswahl(800,350,940,345);
+        lehrerauswahl = new Lehrerauswahl(800,350,900,330);
         wurzel.add(lehrerauswahl.getRaum());
     }
     
