@@ -41,7 +41,7 @@ public class Lehrerauswahl
         
         index = 0;
         
-        currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
+        currentIcon = new Bild(xIcon,yIcon, 8, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
         
         myGame.getInstance().setLehrer(lehrer[index]);
@@ -57,7 +57,7 @@ public class Lehrerauswahl
         wurzel.entfernen(currentIcon);
         wurzel.entfernen(currentName);
     
-        currentIcon = new Bild(xIcon,yIcon, 100, lehrer[index].DATEIPFAD_ICON);
+        currentIcon = new Bild(xIcon,yIcon, 8, lehrer[index].DATEIPFAD_ICON);
         currentName = new Bild(xName,yName, 100, lehrer[index].DATEIPFAD_NAME);
         
         myGame.getInstance().setLehrer(lehrer[index]);
