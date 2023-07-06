@@ -25,6 +25,7 @@ public class ButtonFacade
             case MEHRSPIELER: return buttons[6];
             case EINSPIELER: return buttons[7];
             case HILFE: return buttons[8];
+            case WEITER: return buttons[9];
             default: return null;
         }
     }
