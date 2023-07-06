@@ -22,6 +22,6 @@ public class ButtonSammlung
         
         HilfeButton hb = new HilfeButton(1870,10,100,TexturManager.DATEIPFAD + "StartButton.png");
 
-        WeiterButton wb = new WeiterButton(1,1,100,TexturManager.DATEIPFAD);
+        WeiterButton wb = new WeiterButton(1500,680,80,TexturManager.DATEIPFAD + "Ok-button.png");
     }
 }
