@@ -20,8 +20,8 @@ public class ButtonSammlung
 
         //PassButton pb = new PassButton(1100,0,100,TexturManager.DATEIPFAD + "PfeilVorButton.png");
         
-        HilfeButton hb = new HilfeButton(1870,10,100,TexturManager.DATEIPFAD + "StartButton.png");
+        HilfeButton hb = new HilfeButton(170,200,17,TexturManager.DATEIPFAD + "tutorial.png");
 
-        WeiterButton wb = new WeiterButton(1,1,100,TexturManager.DATEIPFAD);
+        WeiterButton wb = new WeiterButton(1500,680,80,TexturManager.DATEIPFAD + "Ok-button.png");
     }
 }
