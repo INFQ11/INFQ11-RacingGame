@@ -141,7 +141,7 @@ public class Einzelspieler extends Bildschirm
         WallU.passivMachen();
         wurzel.add(WallU);
 
-        Rechteck WallUb = new Rechteck(0,-100,6000,100);
+        Rechteck WallUb = new Rechteck(0,-1000,6000,1000);
         WallUb.passivMachen();
 
 
@@ -149,7 +149,7 @@ public class Einzelspieler extends Bildschirm
         WallR.passivMachen();
         wurzel.add(WallR);
 
-        Rechteck WallRb = new Rechteck(1920*3,0,110,3600);
+        Rechteck WallRb = new Rechteck(1920*3,0,1010,3600);
         WallRb.passivMachen();
 
 
@@ -157,7 +157,7 @@ public class Einzelspieler extends Bildschirm
         WallD.passivMachen();
         wurzel.add(WallD);
 
-        Rechteck WallDb = new Rechteck(0,3600,6000,110);
+        Rechteck WallDb = new Rechteck(0,3600,6000,1010);
         WallDb.passivMachen();
 
 
@@ -165,7 +165,7 @@ public class Einzelspieler extends Bildschirm
         WallL.passivMachen();
         wurzel.add(WallL);
 
-        Rechteck WallLb = new Rechteck(-100,-1000,100,5000);
+        Rechteck WallLb = new Rechteck(-1000,-1000,1000,5000);
         WallLb.passivMachen();
 
         
