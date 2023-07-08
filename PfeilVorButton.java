@@ -16,6 +16,7 @@ public class PfeilVorButton extends Button
  
  public void gedrückt()
  {
+     ButtonSound.playBS();
      Auswahlbildschirm_Lehrer.lehrerauswahl.lehrerNachRechts();
  }
 }

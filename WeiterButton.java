@@ -13,6 +13,7 @@ public class WeiterButton extends Button
     @Override
     public void gedrückt()
     {
+        ButtonSound.playBS();
         myGame.getInstance().bildschirmWechseln(BildschirmType.STARTBILDSCHIRM);
     }
 

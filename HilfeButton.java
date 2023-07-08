@@ -20,6 +20,7 @@ public class HilfeButton extends Button
     
     public void gedrückt()
     {
+        ButtonSound.playBS();
         myGame.getInstance().bildschirmWechseln(BildschirmType.HILFE);
     }
 }
