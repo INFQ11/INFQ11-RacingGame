@@ -85,7 +85,7 @@ public class Hilfe extends Bildschirm
         ButtonFacade.getButton(ButtonType.WEITER).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.WEITER));
         
-
+        menu.playMenu();
 
     }
 
