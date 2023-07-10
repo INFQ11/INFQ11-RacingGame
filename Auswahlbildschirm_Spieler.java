@@ -14,7 +14,7 @@ public class Auswahlbildschirm_Spieler extends Bildschirm
         ButtonFacade.getButton(ButtonType.EINSPIELER).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.EINSPIELER));
         
-        ButtonFacade.getButton(ButtonType.MEHRSPIELER).setActive(true);
+        //ButtonFacade.getButton(ButtonType.MEHRSPIELER).setActive(true);
         wurzel.add(ButtonFacade.getButton(ButtonType.MEHRSPIELER));
     }
     
