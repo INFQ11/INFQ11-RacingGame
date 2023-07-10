@@ -6,7 +6,7 @@ public class Einzelspieler extends Bildschirm
 {
     public Einzelspieler()
     {
-        Bild b = new Bild(0, 0, 100, TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
+        Bild b = new Bild(0, 0, 100, TexturManager.DATEIPFAD + "Strecke.png");
         wurzel.add(b);
         
         LEHRER lehrer = myGame.getInstance().getLehrer();

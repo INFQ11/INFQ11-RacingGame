@@ -6,7 +6,7 @@ public class Mehrspieler extends Bildschirm
 {
     public Mehrspieler()
     {
-        Bild bild = new Bild(0,0,100,TexturManager.DATEIPFAD + "Strecke (Upscaled).png");
+        Bild bild = new Bild(0,0,100,TexturManager.DATEIPFAD + "Strecke.png");
         wurzel.add(bild);
         
         LEHRER lehrer = myGame.getInstance().getLehrer();
