@@ -38,8 +38,8 @@ public class Ende extends Bildschirm
         Line[5] = "Sollten Sie jedoch den Genuss beenden wollen, können Sie das mithilfe der „esc“-Taste verwirklichen und das Spiel verlassen.";
         System.out.println(SteuerungFacade.getStoppuhr().getResult());
         System.out.println(QuestionController.getCorrectAnswers());
-        Line[6] = "Ihre Punktzahl: " + (SteuerungFacade.getStoppuhr().getResult() - 3*QuestionController.getCorrectAnswers());
-        Line[7] = "Info: Die Punktzahl errechnet sich aus erreichter Zeit und richtigen Antworten --> Hoher Score = gut";
+        Line[6] = "Ihre Punktzahl: " + (SteuerungFacade.getStoppuhr().getResult() - 4*QuestionController.getCorrectAnswers());
+        Line[7] = "Info: Die Punktzahl errechnet sich aus erreichter Zeit und richtigen Antworten --> Kleinerer Score = gut";
     }
     
     public void tasteReagieren(int tastencode)
