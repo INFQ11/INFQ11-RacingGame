@@ -91,29 +91,17 @@ public class Auto extends Bild
     speed = 0;
     }
 
-
-
     }
 
     if (angle < 0)
         angle = 360 - angle;
     else if (angle > 360)
     angle %= 360; //Angle Range Control
-    
-    
+
     this.verschieben(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
 
     if (!secondPlayer)
     myGame.getInstance().getCam().positionSetzen(this.getX() - 850, this.getY() - 450);
-
-
-        //Kreis miniSpieler = new Kreis(this.getX() / TexturManager.BREITE + TexturManager.BREITE / 10 * 7, this.getY() / TexturManager.HOEHE + TexturManager.HOEHE / 10 * 7, 5);
-        //miniSpieler.farbeSetzen(Color.RED);
-        //myGame.getInstance().getStatischeWurzel().add(miniSpieler);
-
-
-
-
 
     this.drehenAbsolut(angle);
     }
