@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Stoppuhr extends Textanzeige {
     private boolean running;
 
-    private ArrayList<Double> times = new ArrayList<>();
     private double result;
     
     public Stoppuhr(float x, float y) {
@@ -34,14 +33,9 @@ public class Stoppuhr extends Textanzeige {
             
             setzeInhalt("" +  Math.round(currentNumber*1000.0)/1000.0);
         }
-
         result = currentNumber;
     }
 
-    public void stop()
-    {
-        running = false;
-    }
 
     public void start()
     {
@@ -49,15 +43,14 @@ public class Stoppuhr extends Textanzeige {
         new Thread(this).start();
     }
 
-    public double getResult()
+    public void computeResult()
     {
-        double res = result;
-        times.add(res);
-        return res;
+        running = false;
     }
 
-    public ArrayList<Double> getTimes()
-    {
-        return this.times;
+    public double getResult() {
+        return QuestionController.getCorrectAnswers()*Math.round(result*1000.0)/1000.0;
     }
+
+
 }

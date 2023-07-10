@@ -29,7 +29,8 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     public void tasteReagieren(int tastencode) 
     {
         SteuerungFacade.tasteReagieren(tastencode);
-        
+        currentBildschirm.tasteReagieren(tastencode);
+
         if (tastencode == 12)
             mausAnmelden(maus);
         if (tastencode == 15) {
@@ -60,6 +61,7 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         menu.stopMenu();
         track.stopTrack();
 
+        statischeWurzel.leeren();
         wurzel.leeren();
         currentBildschirmType = bildschirm;
         currentBildschirm = BildschirmFacade.getBildschirm(bildschirm);
@@ -88,6 +90,11 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
             return instance;
         else 
             return instance = new myGame();
+    }
+
+    public static myGame initNewInstance() {
+        instance = new myGame();
+        return instance;
     }
     
     private myGame()

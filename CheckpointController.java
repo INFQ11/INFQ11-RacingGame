@@ -4,18 +4,21 @@ public class CheckpointController {
     public static void checkpointTriggered (Checkpoint cp) {
 
         int code = cp.getCode();
-
-        if (code == 69) {
+        System.out.println("CP: " + cp.getCode() + " triggered");
+        if (code == 69 && counter == 4) {
             // END CP reached
             counter = 0;
-            SteuerungFacade.getStoppuhr().stop();
-            SteuerungFacade.getStoppuhr().getResult();
-            // myGame.getInstance().bildschirmWechseln(BildschirmType.ENDBILDSCHIRM);
+            SteuerungFacade.getStoppuhr().computeResult();
+            SteuerungFacade.stopTicker();
+            myGame.getInstance().bildschirmWechseln(BildschirmType.ENDE);
         } else {
             counter ++;
-
+            QuestionController.nextQuestion();
         }
-        System.out.println("CP: " + cp.getCode() + " triggered");
-        counter++;
+    }
+
+    public static int getCounter()
+    {
+        return counter;
     }
 }

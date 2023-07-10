@@ -168,11 +168,25 @@ public class Einzelspieler extends Bildschirm
         Rechteck WallLb = new Rechteck(-1000,-1000,1000,5000);
         WallLb.passivMachen();
 
-        Checkpoint cp = new Checkpoint(827, 317, 200,200, 1);
-        cp.aktivMachen();
-        new Thread(cp).start();
-        wurzel.add(cp);
-        
+        Checkpoint cp1 = new Checkpoint(739, 250, 300,300, 1);
+        new Thread(cp1).start();
+        //wurzel.add(cp1);
+        Checkpoint cp2 = new Checkpoint(1556, 2000, 300,300, 2);
+        new Thread(cp2).start();
+        //wurzel.add(cp2);
+        Checkpoint cp3 = new Checkpoint(4110, 3150, 300,300, 3);
+        new Thread(cp3).start();
+        //wurzel.add(cp3);
+        Checkpoint cp4 = new Checkpoint(1283, 3180, 300,300, 4);
+        new Thread(cp4).start();
+        //wurzel.add(cp4);
+        Checkpoint END = new Checkpoint(346, 1720, 300,300, 69);
+        new Thread(END).start();
+        //wurzel.add(END);
+
+
+
+
         Countdown c = new Countdown(1400 ,540);
         wurzel.add(c.getRaum());
         new Thread(c).start();

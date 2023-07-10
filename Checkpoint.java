@@ -18,14 +18,18 @@ public class Checkpoint extends Rechteck implements Runnable {
     public void run() {
         while (running)
         {
-            if (dimension.istIn(FahrerFacade.getFahrer1().getCar().position())) {
+            if (code == 69)
+            {
+                if (beinhaltet(FahrerFacade.getFahrer1().getCar().mittelPunkt()) && CheckpointController.getCounter() == 4) {
+                    CheckpointController.checkpointTriggered(this);
+                    running = false;
+                }
+            }
+            else
+            if (beinhaltet(FahrerFacade.getFahrer1().getCar().mittelPunkt())) {
                 CheckpointController.checkpointTriggered(this);
                 running = false;
             }
         }
     }
-
-
-
-
 }

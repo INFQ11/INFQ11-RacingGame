@@ -29,7 +29,6 @@ public class SteuerungFacade
     
     public static void stopTicker() {
         ticking = false;
-        stoppuhr.stop();
     }
 
     private static Stoppuhr stoppuhr;
