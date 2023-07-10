@@ -33,8 +33,8 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         if (tastencode == 12)
             mausAnmelden(maus);
         if (tastencode == 15) {
-            System.out.println(FahrerFacade.getFahrer1().getCar().getX());
-            System.out.println(FahrerFacade.getFahrer1().getCar().getY());
+            System.out.println("X: " + FahrerFacade.getFahrer1().getCar().getX());
+            System.out.println("Y: " + FahrerFacade.getFahrer1().getCar().getY());
         }
     }
 
