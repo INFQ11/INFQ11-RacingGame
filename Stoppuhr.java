@@ -36,7 +36,6 @@ public class Stoppuhr extends Textanzeige {
         result = currentNumber;
     }
 
-
     public void start()
     {
         running = true;
@@ -49,7 +48,7 @@ public class Stoppuhr extends Textanzeige {
     }
 
     public double getResult() {
-        return QuestionController.getCorrectAnswers()*Math.round(result*1000.0)/1000.0;
+        return Math.round(result*1000.0)/1000.0;
     }
 
 
