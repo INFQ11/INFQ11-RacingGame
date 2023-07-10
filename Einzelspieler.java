@@ -10,7 +10,7 @@ public class Einzelspieler extends Bildschirm
         wurzel.add(b);
         
         LEHRER lehrer = myGame.getInstance().getLehrer();
-        Fahrer fahrer = new Fahrer(960,540,100, "Player 1", lehrer, false);
+        Fahrer fahrer = new Fahrer(477,2041,100, "Player 1", lehrer, false);
         wurzel.add(FahrerFacade.getRaum());
 
         Rechteck WandVert1 = new Rechteck(610,560,10,2640);
@@ -168,6 +168,10 @@ public class Einzelspieler extends Bildschirm
         Rechteck WallLb = new Rechteck(-1000,-1000,1000,5000);
         WallLb.passivMachen();
 
+        Checkpoint cp = new Checkpoint(827, 317, 200,200, 1);
+        cp.aktivMachen();
+        new Thread(cp).start();
+        wurzel.add(cp);
         
         Countdown c = new Countdown(1400 ,540);
         wurzel.add(c.getRaum());

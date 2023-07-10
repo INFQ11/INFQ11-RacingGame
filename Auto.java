@@ -46,7 +46,7 @@ public class Auto extends Bild
         this.secondPlayer = secondPlayer;
 
         if (!secondPlayer)
-        myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
+        myGame.getInstance().getCam().positionSetzen(960 - 400, 540 - 300);
     }
     
     
@@ -181,7 +181,7 @@ public class Auto extends Bild
     {
     accbool = false;
     direction = DIRECTION.NEUTRAL;
-    myGame.getInstance().sicherheitsFrage("Congratulations, you found the EasterEgg of this Game and with it, the names of its creators: Hurensohn, Maximilian Emberger and Konstantin Silberbauer");
+    myGame.getInstance().sicherheitsFrage("Congratulations, you found the EasterEgg of this Game and with it, the names of its creators: Constantin Holzfurtner, Maximilian Emberger and Konstantin Silberbauer");
     ee = "aaaaaaaaaaaaaaaaaaaaaa";
     }
 

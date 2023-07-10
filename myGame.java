@@ -69,11 +69,11 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
         {
             case EINZELSPIELER:
             case MEHRSPIELER:
-                track.playTrack();
+                //track.playTrack();
                 break;
 
             default:
-                menu.playMenu();
+                //menu.playMenu();
         }
     }
     
