@@ -24,6 +24,8 @@ public abstract class Bildschirm
             
             case HILFE: return new Hilfe();
             
+            case ENDE: return new Ende();
+            
             default: throw new UnsupportedOperationException("No verified BildschirmType selected");
         }
     }
