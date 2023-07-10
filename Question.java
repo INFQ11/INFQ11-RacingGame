@@ -11,10 +11,10 @@ public class Question extends Rechteck {
     public Question(String q, String a1, String a2, String a3, int correctAnswer) {
         super(0,0,0,0);
         this.correctAnswer = correctAnswer;
-        int x = 1250;
+        int x = 1000;
         int y = 0;
 
-        Rechteck background = new Rechteck( x, y, 700, 210);
+        Rechteck background = new Rechteck( x, y, 900, 210);
         wurzel.add(background);
 
         Text question = new Text(x + 20, y + 10, "Q: " + q);
@@ -37,5 +37,9 @@ public class Question extends Rechteck {
 
     public Raum getRaum() {
         return wurzel;
+    }
+
+    public int getCorrectAnswer() {
+        return correctAnswer;
     }
 }

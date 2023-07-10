@@ -196,6 +196,8 @@ public class Einzelspieler extends Bildschirm
     @Override
     public void tasteReagieren(int tastencode)
     {
-
+        if (QuestionController.getCurrentQuestion() != null && tastencode >= 34 && tastencode <= 36) {
+            QuestionController.answer(tastencode - 33);
+        }
     }
 }

@@ -4,7 +4,7 @@ import ea.*;
  */
 public class Ende extends Bildschirm
 {
-    private String Line[] = new String[7];
+    private String Line[] = new String[8];
     public Ende()
     {
         myGame.getInstance().getCam().positionSetzen(new Punkt(0,0));
@@ -25,6 +25,7 @@ public class Ende extends Bildschirm
         wurzel.add(t5);
         Text score = new Text(600,150,30,Line[6]);
         wurzel.add(score);
+        Text info = new Text(200, 500, 20, Line[7]);
     }
 
     public void newArray()
@@ -35,7 +36,10 @@ public class Ende extends Bildschirm
         Line[3] = "Im oberen, mittleren Segment des Bildschirms können Sie ihre Punktzahl des zuletzt absolvierten Laufs betrachten!";
         Line[4] = "Wenn sie zu versuchen vermögen, ihren erspielten Punktestand für ein noch besseres Ergebnis auszutauschen, steht es ihnen frei, die Leertaste zu betätigen und das Spiel erneut zu exerzieren.";
         Line[5] = "Sollten Sie jedoch den Genuss beenden wollen, können Sie das mithilfe der „esc“-Taste verwirklichen und das Spiel verlassen.";
-        Line[6] = "Ihre Punktzahl: " + SteuerungFacade.getStoppuhr().getResult();
+        System.out.println(SteuerungFacade.getStoppuhr().getResult());
+        System.out.println(QuestionController.getCorrectAnswers());
+        Line[6] = "Ihre Punktzahl: " + (SteuerungFacade.getStoppuhr().getResult() - 3*QuestionController.getCorrectAnswers());
+        Line[7] = "Info: Die Punktzahl errechnet sich aus erreichter Zeit und richtigen Antworten --> Hoher Score = gut";
     }
     
     public void tasteReagieren(int tastencode)
