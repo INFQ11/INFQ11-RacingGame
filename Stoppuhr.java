@@ -7,11 +7,11 @@ import java.util.ArrayList;
 public class Stoppuhr extends Textanzeige {
     private boolean running;
 
-    private double result;
+    //private double result;
     
     public Stoppuhr(float x, float y) {
         super(x, y, 70, "0", 0, 1);
-        result = -1.0;
+        //result = -1.0;
         background = new Rechteck(0,0,500,170);
         Text t = new Text(15,100,25, FahrerFacade.getCurrentFahrer().toString());
         t.setzeFarbe(Color.BLACK);
@@ -25,6 +25,7 @@ public class Stoppuhr extends Textanzeige {
 
         while (running)
         {
+
             try {
                 Thread.sleep(1);
             } catch (InterruptedException e) {}
@@ -33,7 +34,7 @@ public class Stoppuhr extends Textanzeige {
             
             setzeInhalt("" +  Math.round(currentNumber*1000.0)/1000.0);
         }
-        result = currentNumber;
+        //result = currentNumber;
     }
 
     public void start()
@@ -48,7 +49,7 @@ public class Stoppuhr extends Textanzeige {
     }
 
     public double getResult() {
-        return Math.round(result*1000.0)/1000.0;
+        return Math.round(currentNumber*1000.0)/1000.0;
     }
 
 

@@ -2,7 +2,7 @@
 
 public enum LEHRER
 {
-    EHRENTHALER     (1, "Florian Ehrenthaler",     1f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Ehrenthaler.png", TexturManager.DATEIPFAD + "ehrenthalerIcon.png",       TexturManager.DATEIPFAD + "Ehrenthaler.png"),
+    EHRENTHALER     (1, "Florian Ehrenthaler",     0.5f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Ehrenthaler.png", TexturManager.DATEIPFAD + "ehrenthalerIcon.png",       TexturManager.DATEIPFAD + "Ehrenthaler.png"),
     ADAM            (2, "Franz Adam",              1f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Adam.png", TexturManager.DATEIPFAD + "adamIcon.png",              TexturManager.DATEIPFAD + "Adam.png"),
     GUST            (3, "Verena Gust",             1f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Gust.png", TexturManager.DATEIPFAD + "gustIcon.png",              TexturManager.DATEIPFAD + "Gust.png"),
     SCHMELMER       (4, "Anton Schmelmer",         1f, 0.0001f, 0.0001f, TexturManager.DATEIPFAD + "Auto_Schmelmer.png", TexturManager.DATEIPFAD + "schmelmerIcon.png",           TexturManager.DATEIPFAD + "Schmelmer.png"),

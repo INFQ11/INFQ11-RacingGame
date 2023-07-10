@@ -104,7 +104,7 @@ public class Auto extends Bild
     this.verschieben(speed*(float)Math.cos(Math.toRadians(this.gibDrehung())), speed*(float)Math.sin(Math.toRadians(this.gibDrehung())));
 
     if (!secondPlayer)
-    myGame.getInstance().getCam().positionSetzen(this.getX() - 400, this.getY() - 300);
+    myGame.getInstance().getCam().positionSetzen(this.getX() - 850, this.getY() - 450);
 
 
         //Kreis miniSpieler = new Kreis(this.getX() / TexturManager.BREITE + TexturManager.BREITE / 10 * 7, this.getY() / TexturManager.HOEHE + TexturManager.HOEHE / 10 * 7, 5);

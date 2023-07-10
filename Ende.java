@@ -23,7 +23,7 @@ public class Ende extends Bildschirm
         wurzel.add(t4);
         Text t5 = new Text(200,460,20,Line[5]);
         wurzel.add(t5);
-        Text score = new Text(600,150,50,Line[6]);
+        Text score = new Text(600,120,50,Line[6]);
         wurzel.add(score);
         Text info = new Text(200, 500, 20, Line[7]);
         wurzel.add(info);

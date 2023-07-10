@@ -185,8 +185,6 @@ public class Einzelspieler extends Bildschirm
         //wurzel.add(END);
 
 
-
-
         Countdown c = new Countdown(1400 ,540);
         wurzel.add(c.getRaum());
         new Thread(c).start();
