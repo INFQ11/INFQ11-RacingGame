@@ -4,7 +4,6 @@ public class CheckpointController {
     public static void checkpointTriggered (Checkpoint cp) {
 
         int code = cp.getCode();
-        System.out.println("CP: " + cp.getCode() + " triggered");
         if (code == 69 && counter == 4) {
             // END CP reached
             counter = 0;
@@ -12,8 +11,11 @@ public class CheckpointController {
             SteuerungFacade.stopTicker();
             myGame.getInstance().bildschirmWechseln(BildschirmType.ENDE);
         } else {
+            if (cp.getCode() == 1)
+            {
+                QuestionController.nextQuestion();
+            }
             counter ++;
-            QuestionController.nextQuestion();
         }
     }
 

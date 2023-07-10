@@ -14,7 +14,18 @@ public class QuestionController {
             add(new Question("Was ist ein Protonendonator?", "Laplace Säure", "Brønsted Säure", "Kraus Säure", 2));
             add(new Question("Welcher dieser Stoffe ist kein Zucker?", "Fructose", "Ribose", "Isodiehose", 3));
             add(new Question("Welcher dieser Reaktionen gibt es nicht?", "Redoxreaktion", "Halbacetal Bildung", "Elektrophilervorderseitenangriff", 3));
-
+            add(new Question("Berechne 230*30", "6900 ", "7020 ", "8030 ",1));
+            add(new Question("Welches dieser Metren ist kein Metrum? ", "Daktylus ", "Nimbus ", "Trochäus ",2));
+            add(new Question("Wie heißt das erste newtonsche Gesetz? ", "Trägheitssatz ", "Schwerkraftssatz ", "Wechselwirkungssatz ",1));
+            add(new Question("Wie viele Bundesstaaten hat die USA? ", "50 ", "51 ", "52 ",1));
+            add(new Question("In welcher Klimazone liegt Deutschland? ", "Gemäßigte Zone ", "Subtropische Zone ", "Subpolar Zone ",1));
+            add(new Question("Welcher dieser Städte liegt nicht in China? ", "Shanghai ", "Xinchang ", "Singapur ",3));
+            add(new Question("Welche Funktion hat das Recht? ", "Profitfunktion ", "Ordnungsfunktion ", "Rettungsfunktion ",2));
+            add(new Question("Zu was führt monetärer Ausgleich nicht? ", "Preissenkung ", "Preissteigerung ", "Stagnation ",3));
+            add(new Question("Was ist ein Decathlon?", "Dreikampf ", "Zehnkampf ", "Siebenkampf",2));
+            add(new Question("Was kann man bei einem Fußballspiel nicht hören? ", "Anpfiff", "Abpfiff ", "Dünnpfiff ",3));
+            add(new Question("Welche dieser Sportarten existiert nicht? ", "Schachboxen ", "Fischerstechen ", "Tastschreiben",3));
+            add(new Question("Wann endete der zweite Weltkrieg? ", "06. Mai 1949 ", "08. Mai 1945", "02. September 1945 ",3));
             // more questions missing
         }
     };
@@ -43,7 +54,6 @@ public class QuestionController {
 
         if (answer == currentQuestion.getCorrectAnswer()) {
             correctAnswers++;
-            System.out.println(correctAnswers);
         }
     }
 
