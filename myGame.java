@@ -58,21 +58,22 @@ public class myGame extends Game implements TastenLosgelassenReagierbar, Ticker
     public void bildschirmWechseln (BildschirmType bildschirm)
     {
         menu.stopMenu();
+        track.stopTrack();
+
         wurzel.leeren();
         currentBildschirmType = bildschirm;
         currentBildschirm = BildschirmFacade.getBildschirm(bildschirm);
         wurzel.add(currentBildschirm.getRaum());
-        if(bildschirm!=BildschirmType.EINZELSPIELER)
+
+        switch(bildschirm)
         {
-            menu.playMenu();
-        }
-        else if(bildschirm!=BildschirmType.MEHRSPIELER)
-        {
-            menu.playMenu();
-        }
-        else
-        {
-            track.playTrack();
+            case EINZELSPIELER:
+            case MEHRSPIELER:
+                track.playTrack();
+                break;
+
+            default:
+                menu.playMenu();
         }
     }
     
